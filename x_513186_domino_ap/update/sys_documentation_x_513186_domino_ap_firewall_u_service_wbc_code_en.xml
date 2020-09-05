@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_service_wbc_code" label="Service WBC code" language="en" table="x_513186_domino_ap_firewall">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_service_wbc_code</element>
+            <help/>
+            <hint/>
+            <label>Service WBC code</label>
+            <language>en</language>
+            <name>x_513186_domino_ap_firewall</name>
+            <plural>Service WBC codes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-30 18:14:29</sys_created_on>
+            <sys_id>5c1da944074b5010c11df2218c1ed0ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Service WBC code</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_documentation_x_513186_domino_ap_firewall_u_service_wbc_code_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-30 18:14:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

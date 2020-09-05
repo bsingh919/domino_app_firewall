@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="firewall_req_id" label="Firewall Req ID" language="en" table="x_513186_domino_ap_firewall_rules">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>firewall_req_id</element>
+            <help/>
+            <hint/>
+            <label>Firewall Req ID</label>
+            <language>en</language>
+            <name>x_513186_domino_ap_firewall_rules</name>
+            <plural>Firewall Req IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-04 00:49:19</sys_created_on>
+            <sys_id>cfcd2b59074f1410c11df2218c1ed002</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Firewall Req ID</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_documentation_x_513186_domino_ap_firewall_rules_firewall_req_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-04 00:49:19</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

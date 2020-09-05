@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Firewall Requests" max_length="40" name="x_513186_domino_ap_firewall" sizeclass="17" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="4000" name="comment" type="string"/>
+        <element attributes="encode_utf8=false" label="Deputies" mandatory="true" max_length="32" name="deputies" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="fast_track" label="Options" mandatory="true" max_length="40" name="options" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Fast Track" sequence="0" value="fast_track"/>
+                <element inactive_on_update="false" label="Partner Connection" sequence="1" value="partner_connection"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Project name" mandatory="true" max_length="40" name="project_name" type="string"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Service manager" mandatory="true" max_length="32" name="service_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Service name" mandatory="true" max_length="40" name="service_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Service WBS Code" max_length="40" name="service_wbs_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="6000" name="u_comment" type="string"/>
+        <element attributes="encode_utf8=false" label="Deputies" mandatory="true" max_length="32" name="u_deputies" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="fast_track" label="Options" max_length="40" name="u_options" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Fast Track" sequence="0" value="fast_track"/>
+                <element inactive_on_update="false" label="Ext/Partner Connection" sequence="1" value="ext/partner_connection"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Project name" mandatory="true" max_length="40" name="u_project_name" type="string"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Service manager" mandatory="true" max_length="32" name="u_service_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Service name" mandatory="true" max_length="40" name="u_service_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Service WBC code" mandatory="true" max_length="40" name="u_service_wbc_code" type="string"/>
+    </element>
+</database>
