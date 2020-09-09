@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="FW Server Group" max_length="40" name="x_513186_domino_ap_fw_server_group" sizeclass="2" type="collection">
+        <element display="true" label="Server Group Name" max_length="80" name="server_group_name" type="string"/>
+        <element label="Server Group Owner" max_length="80" name="server_group_owner" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>th-list</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">5dae59d307479010c11df2218c1ed045</sp_column>
+        <sp_page display_value="firewall_request_list">4ac5099307079010c11df2218c1ed03b</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-09 19:32:00</sys_created_on>
+        <sys_id>ddbed5d307479010c11df2218c1ed0b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>My Firewall Requests</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sp_instance_link_ddbed5d307479010c11df2218c1ed0b7</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-09 19:33:24</sys_updated_on>
+        <title>My Firewall Requests</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=ddbed5d307479010c11df2218c1ed0b7"/>
+</record_update>

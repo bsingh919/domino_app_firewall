@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="FW Network Group" max_length="40" name="x_513186_domino_ap_fw_network_group" sizeclass="5" type="collection">
+        <element display="true" label="Network Group Name" max_length="80" name="network_group_name" type="string"/>
+        <element label="Network Group Owner" max_length="80" name="network_group_owner" type="string"/>
+    </element>
+</database>

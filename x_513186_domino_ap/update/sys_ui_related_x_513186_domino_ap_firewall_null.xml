@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_513186_domino_ap_firewall" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Firewall Requests - Default view" name="x_513186_domino_ap_firewall" related_list="NULL" sys_domain="global" view="Default view">11b9d11307479010c11df2218c1ed053</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:5010591b07079010c11df2218c1ed062</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-09 19:10:09</sys_created_on>
+            <sys_id>91b9d11307479010c11df2218c1ed054</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-09 19:10:09</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Firewall Requests - Default view</calculated_name>
+            <filter/>
+            <name>x_513186_domino_ap_firewall</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-09 19:10:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11b9d11307479010c11df2218c1ed053</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Firewall Requests - Default view</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_ui_related_x_513186_domino_ap_firewall_null</sys_update_name>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-09 19:10:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

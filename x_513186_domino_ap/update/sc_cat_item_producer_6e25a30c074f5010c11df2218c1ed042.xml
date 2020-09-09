@@ -66,8 +66,10 @@ var description = '';
 for (var i = 0; i < dominoFirewallRules.length; i++) {
 
 	gs.info("dominoFirewallRules.length = " + dominoFirewallRules.length );
-    description += "\n source_server_name: " + dominoFirewallRules[i].source_server_name + "\n Source IP Address: " + dominoFirewallRules[i].source_ip_address + "\n dest_server_name: " + dominoFirewallRules[i].destination_server_name + "\n Dest IP Address: " + dominoFirewallRules[i].destination_ip_address + "\n NeSe Service Name: " + dominoFirewallRules[i].nese_service_name + "\n Port Number: " + dominoFirewallRules[i].port_number + "\n Protocol: " + dominoFirewallRules[i].protocol +"\n";
-	gs.info("source_server_name = " + dominoFirewallRules[i].source_server_name);
+    description += "\n source_server_name: " + dominoFirewallRules[i].source_server_name + "\n Source IP Address: " + dominoFirewallRules[i].source_ip_address + "\n source_mask: " + dominoFirewallRules[i].source_ip_mask + "\n dest_server_name: " + dominoFirewallRules[i].dest_server_name + "\n Dest IP Address: " + dominoFirewallRules[i].dest_ip_address + "\n dest_mask: " + dominoFirewallRules[i].dest_ip_mask + "\n NeSe Service Name: " + dominoFirewallRules[i].nese_service_name + "\n Port Number: " + dominoFirewallRules[i].port_number + "\n Protocol: " + dominoFirewallRules[i].protocol + "\n";
+
+// 	description += "\n source_server_name: "  + "\n Source IP Address: " + "\n"  + dominoFirewallRules[i].source_server_name + dominoFirewallRules[i].source_ip_address ;
+	
 }
 current.comment = description;
 
@@ -81,15 +83,18 @@ current.comment = description;
 		var grFirewallRule = new GlideRecord('x_513186_domino_ap_firewall_rules');
 		grFirewallRule.initialize();
 		gs.info("Baljinder....inside firewall rule for loop");
+		gs.info('firewall_req_id = ', current.getUniqueValue());
 		grFirewallRule.setValue('firewall_req_id', current.getUniqueValue());
 		grFirewallRule.setValue('source_server_name', producer.domino_firewall_rules_list.getRow(i).source_server_name);
 		grFirewallRule.setValue('source_ip_address', producer.domino_firewall_rules_list.getRow(i).source_ip_address);
-		grFirewallRule.setValue('dest_server_name', producer.domino_firewall_rules_list.getRow(i).destination_server_name);
-		grFirewallRule.setValue('dest_ip_address', producer.domino_firewall_rules_list.getRow(i).destination_ip_address);
+		grFirewallRule.setValue('source_mask', producer.domino_firewall_rules_list.getRow(i).source_ip_mask);
+		grFirewallRule.setValue('dest_server_name', producer.domino_firewall_rules_list.getRow(i).dest_server_name);
+		grFirewallRule.setValue('dest_ip_address', producer.domino_firewall_rules_list.getRow(i).dest_ip_address);
+		grFirewallRule.setValue('dest_mask', producer.domino_firewall_rules_list.getRow(i).dest_ip_mask);
 		grFirewallRule.setValue('nese_service_name',  producer.domino_firewall_rules_list.getRow(i).nese_service_name);
 		grFirewallRule.setValue('port_number', producer.domino_firewall_rules_list.getRow(i).port_number);
 		grFirewallRule.setValue('protocol', producer.domino_firewall_rules_list.getRow(i).protocol);
-										
+
 		grFirewallRule.insert();
 	}
 
@@ -101,14 +106,14 @@ current.comment = description;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-31 03:01:52</sys_created_on>
         <sys_id>6e25a30c074f5010c11df2218c1ed042</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Firewall Request</sys_name>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>sc_cat_item_producer_6e25a30c074f5010c11df2218c1ed042</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 00:58:45</sys_updated_on>
+        <sys_updated_on>2020-09-09 19:43:26</sys_updated_on>
         <table_name>x_513186_domino_ap_firewall</table_name>
         <template/>
         <type>item</type>

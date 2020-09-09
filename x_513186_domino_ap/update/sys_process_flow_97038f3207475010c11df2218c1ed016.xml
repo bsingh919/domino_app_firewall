@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_513186_domino_ap_firewall">state=1^EQ<item display_value="Requested" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>firewall_request</label>
+        <name>Firewall Requests - Requested State</name>
+        <order>100</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-08 13:34:54</sys_created_on>
+        <sys_id>97038f3207475010c11df2218c1ed016</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Firewall Requests - Requested State</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_process_flow_97038f3207475010c11df2218c1ed016</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-08 13:47:49</sys_updated_on>
+        <table>x_513186_domino_ap_firewall</table>
+    </sys_process_flow>
+</record_update>
