@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="FW Inbound Ports" max_length="40" name="x_513186_domino_ap_fw_inbound_ports" sizeclass="1" type="collection">
+    <element label="FW Inbound Ports" max_length="40" name="x_513186_domino_ap_fw_inbound_ports" sizeclass="2" type="collection">
         <element label="Port Name" max_length="40" name="port_name" type="string"/>
         <element label="Port Number" max_length="40" name="port_number" type="integer"/>
         <element label="Protocol" max_length="40" name="protocol" type="string"/>

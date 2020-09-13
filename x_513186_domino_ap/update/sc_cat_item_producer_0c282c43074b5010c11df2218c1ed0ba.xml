@@ -54,7 +54,7 @@
         <sc_catalogs/>
         <sc_ic_item_staging/>
         <sc_ic_version/>
-        <script><![CDATA[producer.portal_redirect = "sp?id=domino_firewall";
+        <script><![CDATA[producer.portal_redirect = "domino";
 
 var rowsRule = producer.fw_subnet_ip_mask.getRowCount();
 for (var i = 0; i < rowsRule; i++) {
@@ -75,14 +75,14 @@ for (var i = 0; i < rowsRule; i++) {
         <sys_created_by>cuong</sys_created_by>
         <sys_created_on>2020-09-08 20:58:00</sys_created_on>
         <sys_id>0c282c43074b5010c11df2218c1ed0ba</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>FW Network Group</sys_name>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>sc_cat_item_producer_0c282c43074b5010c11df2218c1ed0ba</sys_update_name>
         <sys_updated_by>cuong</sys_updated_by>
-        <sys_updated_on>2020-09-08 21:36:35</sys_updated_on>
+        <sys_updated_on>2020-09-09 20:40:28</sys_updated_on>
         <table_name>x_513186_domino_ap_fw_network_group</table_name>
         <template/>
         <type>item</type>

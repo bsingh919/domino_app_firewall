@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Firewall Requests" max_length="40" name="x_513186_domino_ap_firewall" sizeclass="10" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="4000" name="comment" type="string"/>
-        <element attributes="encode_utf8=false" label="Deputies" mandatory="true" max_length="32" name="deputies" reference="sys_user" type="reference"/>
+    <element audit="true" extends="task" label="Firewall Requests" max_length="40" name="x_513186_domino_ap_firewall" sizeclass="2" type="collection">
+        <element label="Domino Parent" max_length="32" name="domino_parent" reference="x_513186_domino_ap_firewall" type="reference"/>
         <element label="Estimated Start Date" max_length="32" name="estimated_start_date" type="glide_date_time"/>
         <element label="Network Groups" max_length="80" name="network_groups" reference="x_513186_domino_ap_fw_network_group" type="glide_list"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="fast_track" label="Options" mandatory="true" max_length="40" name="options" type="string">
+        <element label="Requested Expiration Date" max_length="32" name="requested_expiration_date" type="glide_date_time"/>
+        <element label="Server Groups" max_length="80" name="server_groups" reference="x_513186_domino_ap_fw_server_group" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="6000" name="u_comment" type="string"/>
+        <element attributes="encode_utf8=false" label="Deputies" mandatory="true" max_length="32" name="u_deputies" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="fast_track" label="Options" mandatory="true" max_length="40" name="u_options" type="string">
             <choice>
+                <element inactive="true" inactive_on_update="true" label="Ext/Partner Connection" sequence="0" value="ext/partner_connection"/>
                 <element inactive_on_update="false" label="Fast Track" sequence="0" value="fast_track"/>
                 <element inactive_on_update="false" label="Partner Connection" sequence="1" value="partner_connection"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Project name" mandatory="true" max_length="40" name="project_name" type="string"/>
-        <element label="Requested Expiration Date" max_length="32" name="requested_expiration_date" type="glide_date_time"/>
-        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
-        <element label="Server Groups" max_length="80" name="server_groups" reference="x_513186_domino_ap_fw_server_group" type="glide_list"/>
-        <element attributes="encode_utf8=false" label="Service manager" mandatory="true" max_length="32" name="service_manager" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Service name" mandatory="true" max_length="40" name="service_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Service WBS Code" max_length="40" name="service_wbs_code" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="6000" name="u_comment" type="string"/>
-        <element attributes="encode_utf8=false" label="Deputies" mandatory="true" max_length="32" name="u_deputies" reference="sys_user" type="reference"/>
-        <element label="New HTML" max_length="65536" name="u_html_1" read_only="true" type="html"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="fast_track" label="Options" max_length="40" name="u_options" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Fast Track" sequence="0" value="fast_track"/>
-                <element inactive_on_update="false" label="Ext/Partner Connection" sequence="1" value="ext/partner_connection"/>
-            </choice>
-        </element>
         <element attributes="edge_encryption_enabled=true" label="Project name" mandatory="true" max_length="40" name="u_project_name" type="string"/>
-        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
-        <element attributes="encode_utf8=false" label="Service manager" mandatory="true" max_length="32" name="u_service_manager" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Service name" mandatory="true" max_length="40" name="u_service_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Service WBC code" mandatory="true" max_length="40" name="u_service_wbc_code" type="string"/>
-        <element attributes="is_multi_text=true,preview_first=true,preview_selector=true" label="New Wiki" max_length="65536" name="u_wiki_text_1" type="wiki_text"/>
+        <element attributes="encode_utf8=false" label="Service Manager" mandatory="true" max_length="32" name="u_service_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Service Name" mandatory="true" max_length="40" name="u_service_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Service WBS Code" mandatory="true" max_length="40" name="u_service_wbc_code" type="string"/>
     </element>
 </database>

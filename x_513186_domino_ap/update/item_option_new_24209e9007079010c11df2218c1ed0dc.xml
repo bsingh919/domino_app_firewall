@@ -18,7 +18,7 @@
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <example_text/>
-        <field>service_manager</field>
+        <field>u_service_manager</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -32,11 +32,11 @@
         <lookup_unique>false</lookup_unique>
         <lookup_value/>
         <macro/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>service_manager</name>
+        <name>u_service_manager</name>
         <order>150</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -61,14 +61,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-31 15:27:05</sys_created_on>
         <sys_id>24209e9007079010c11df2218c1ed0dc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Service manager</sys_name>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>item_option_new_24209e9007079010c11df2218c1ed0dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-04 19:33:30</sys_updated_on>
+        <sys_updated_on>2020-09-11 21:13:22</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

@@ -54,7 +54,7 @@
         <sc_catalogs/>
         <sc_ic_item_staging/>
         <sc_ic_version/>
-        <script><![CDATA[producer.portal_redirect = "sp?id=domino_firewall";
+        <script><![CDATA[producer.portal_redirect = "domino";
 
 // update end users ports
 var portCount = producer.fw_end_user_ports.getRowCount();
@@ -102,14 +102,14 @@ for (i = 0; i < portCount; i++) {
         <sys_created_by>cuong</sys_created_by>
         <sys_created_on>2020-09-09 09:16:59</sys_created_on>
         <sys_id>3bc1938b07cf5010c11df2218c1ed0f4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>FW Server Group</sys_name>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>sc_cat_item_producer_3bc1938b07cf5010c11df2218c1ed0f4</sys_update_name>
         <sys_updated_by>cuong</sys_updated_by>
-        <sys_updated_on>2020-09-09 09:52:44</sys_updated_on>
+        <sys_updated_on>2020-09-09 20:40:48</sys_updated_on>
         <table_name>x_513186_domino_ap_fw_server_group</table_name>
         <template/>
         <type>item</type>
