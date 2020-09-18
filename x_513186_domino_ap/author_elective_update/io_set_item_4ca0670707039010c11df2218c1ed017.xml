@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>900</order>
+        <sc_cat_item display_value="Firewall Request">6e25a30c074f5010c11df2218c1ed042</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-09 10:21:41</sys_created_on>
+        <sys_id>4ca0670707039010c11df2218c1ed017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FW Network Groups.Firewall Request</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>io_set_item_4ca0670707039010c11df2218c1ed017</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-09 10:21:41</sys_updated_on>
+        <variable_set display_value="FW Network Groups">fda0670707039010c11df2218c1ed043</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>io_set_item_4ca0670707039010c11df2218c1ed017</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>900</order><sc_cat_item display_value="Firewall Request">6e25a30c074f5010c11df2218c1ed042</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-09 10:21:41</sys_created_on><sys_id>4ca0670707039010c11df2218c1ed017</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FW Network Groups.Firewall Request</sys_name><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>io_set_item_4ca0670707039010c11df2218c1ed017</sys_update_name><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-09 10:21:41</sys_updated_on><variable_set display_value="FW Network Groups">fda0670707039010c11df2218c1ed043</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-555760201</payload_hash>
+        <record_name>FW Network Groups.Firewall Request</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-09 10:21:41</sys_created_on>
+        <sys_id>00c0e70707039010c11df2218c1ed0f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1747262a67a0000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-09 10:21:41</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>48c0e707d00390105648657764f4baf8</update_guid>
+        <update_guid_history>48c0e707d00390105648657764f4baf8:-555760201</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="FW Network Groups.Firewall Request">c287a77007579410c11df2218c1ed026</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-14 21:20:41</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>c7b484a66631453487976fded91a5644</sys_id>
+        <sys_metadata>4ca0670707039010c11df2218c1ed017</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FW Network Groups.Firewall Request</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>io_set_item_4ca0670707039010c11df2218c1ed017</sys_update_name>
+        <sys_update_version display_value="io_set_item_4ca0670707039010c11df2218c1ed017">00c0e70707039010c11df2218c1ed0f9</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-14 21:20:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

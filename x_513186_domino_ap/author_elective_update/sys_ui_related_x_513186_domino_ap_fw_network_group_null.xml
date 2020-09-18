@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related action="DELETE" sys_domain="global" table="x_513186_domino_ap_fw_network_group" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="FW Network Group - Default view" name="x_513186_domino_ap_fw_network_group" related_list="NULL" sys_domain="global" view="Default view">e5ebe51f07479010c11df2218c1ed02a</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_513186_domino_ap_fw_subnet_ip_mask.network_group_ref</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-09 20:29:38</sys_created_on>
+            <sys_id>a5ebe51f07479010c11df2218c1ed02b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-09 20:29:38</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>FW Network Group - Default view</calculated_name>
+            <filter/>
+            <name>x_513186_domino_ap_fw_network_group</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-09 20:29:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e5ebe51f07479010c11df2218c1ed02a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>FW Network Group - Default view</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_ui_related_x_513186_domino_ap_fw_network_group_null</sys_update_name>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-09 20:29:38</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sys_ui_related_x_513186_domino_ap_fw_network_group_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_513186_domino_ap_fw_network_group" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="FW Network Group - Default view" name="x_513186_domino_ap_fw_network_group" related_list="NULL" sys_domain="global" view="Default view">e5ebe51f07479010c11df2218c1ed02a</list_id><order_by/><position>0</position><related_list>x_513186_domino_ap_fw_subnet_ip_mask.network_group_ref</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-09 20:29:38</sys_created_on><sys_id>a5ebe51f07479010c11df2218c1ed02b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-09 20:29:38</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>FW Network Group - Default view</calculated_name><filter/><name>x_513186_domino_ap_fw_network_group</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-09 20:29:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e5ebe51f07479010c11df2218c1ed02a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FW Network Group - Default view</sys_name><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>sys_ui_related_x_513186_domino_ap_fw_network_group_null</sys_update_name><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-09 20:29:38</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+        <payload_hash>-935432597</payload_hash>
+        <record_name>FW Network Group</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-09 20:29:38</sys_created_on>
+        <sys_id>21ebe51f07479010c11df2218c1ed02d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174748f3e340000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-09 20:29:38</sys_updated_on>
+        <type>Related Lists</type>
+        <update_guid>a9ebe51f20479010162a8435917f942c</update_guid>
+        <update_guid_history>a9ebe51f20479010162a8435917f942c:-935432597</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-15 14:51:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_related_list">sys_ui_related_list</sys_db_object>
+        <sys_id>a249635ca24d4b668ac7f1a76ab875a4</sys_id>
+        <sys_metadata>e5ebe51f07479010c11df2218c1ed02a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FW Network Group - Default view</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent display_value="">369bd80b070b5010c11df2218c1ed0ea</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sys_ui_related_x_513186_domino_ap_fw_network_group_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_related_x_513186_domino_ap_fw_network_group_null">21ebe51f07479010c11df2218c1ed02d</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-15 14:51:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

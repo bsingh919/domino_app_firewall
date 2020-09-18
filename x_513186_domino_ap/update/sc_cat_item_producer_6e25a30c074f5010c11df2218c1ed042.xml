@@ -56,59 +56,112 @@
         <sc_ic_version/>
         <script><![CDATA[producer.portal_redirect ="domino";
 
-// producer.portal_redirect = "sp?id=sc_category";
-// alert("This is a test");
-// alert();
-// var dominoFirewallRules = JSON.parse(producer.domino_firewall_rules_list);
-// var description = '';
-
-// for (var i = 0; i < dominoFirewallRules.length; i++) {
-
-// 	gs.info("dominoFirewallRules.length = " + dominoFirewallRules.length );
-//     description += "\n source_server_name: " + dominoFirewallRules[i].source_server_name + "\n Source IP Address: " + dominoFirewallRules[i].source_ip_address + "\n source_mask: " + dominoFirewallRules[i].source_ip_mask + "\n dest_server_name: " + dominoFirewallRules[i].dest_server_name + "\n Dest IP Address: " + dominoFirewallRules[i].dest_ip_address + "\n dest_mask: " + dominoFirewallRules[i].dest_ip_mask + "\n NeSe Service Name: " + dominoFirewallRules[i].nese_service_name + "\n Port Number: " + dominoFirewallRules[i].port_number + "\n Protocol: " + dominoFirewallRules[i].protocol + "\n";
-
-// // 	description += "\n source_server_name: "  + "\n Source IP Address: " + "\n"  + dominoFirewallRules[i].source_server_name + dominoFirewallRules[i].source_ip_address ;
-	
-// }
-//current.comment = description;
-// current.comment = "Hello cuong: " + g_form.getValue(domino_parent);
-
-
-var rowsCount = producer.fw_server_groups.getRowCount();
-for (var j = 0; j < rowsCount; j++) {
-
-	current.setValue('server_groups', producer.fw_server_groups.getRow(j).server_groups);
-
+if(producer.being_cloned == "true") {
+	gs.info("Need to clone the record");
+}
+else {
+	gs.info("No need to clone");
+}
+var li = RP.getWindowProperties();
+for (l in li) {
+	gs.info("item:" + l);
 }
 
+var rowsRule = producer.domino_firewall_rules_list.getRowCount();
 
-// (function() {
-	
-	var rowsRule = producer.domino_firewall_rules_list.getRowCount();
-	
-	for (var i = 0; i < rowsRule; i++) {
-		
-		var grFirewallRule = new GlideRecord('x_513186_domino_ap_firewall_rules');
-		grFirewallRule.initialize();
+for (var i = 0; i < rowsRule; i++) {
 
-		grFirewallRule.setValue('firewall_req_id', current.getUniqueValue());
-		grFirewallRule.setValue('source_server_network_group', producer.domino_firewall_rules_list.getRow(i).source_server_network_group);
-		grFirewallRule.setValue('source_server_name', producer.domino_firewall_rules_list.getRow(i).source_server_name);
-		grFirewallRule.setValue('source_ip_address', producer.domino_firewall_rules_list.getRow(i).source_ip_address);
-		grFirewallRule.setValue('source_mask', producer.domino_firewall_rules_list.getRow(i).source_ip_mask);
-		grFirewallRule.setValue('dest_server_network_group', producer.domino_firewall_rules_list.getRow(i).dest_server_network_group);
-		grFirewallRule.setValue('dest_server_name', producer.domino_firewall_rules_list.getRow(i).dest_server_name);
-		grFirewallRule.setValue('dest_ip_address', producer.domino_firewall_rules_list.getRow(i).dest_ip_address);
-		grFirewallRule.setValue('dest_mask', producer.domino_firewall_rules_list.getRow(i).dest_ip_mask);
-		grFirewallRule.setValue('nese_service_name',  producer.domino_firewall_rules_list.getRow(i).nese_service_name);
-		grFirewallRule.setValue('dest_port_group', producer.domino_firewall_rules_list.getRow(i).dest_port_group);
-		grFirewallRule.setValue('port_number', producer.domino_firewall_rules_list.getRow(i).port_number);
-		grFirewallRule.setValue('protocol', producer.domino_firewall_rules_list.getRow(i).protocol);
+	var grFirewallRule = new GlideRecord('x_513186_domino_ap_firewall_rules');
+	grFirewallRule.initialize();
 
-		grFirewallRule.insert();
+	grFirewallRule.setValue('firewall_req_id', current.getUniqueValue());
+	grFirewallRule.setValue('source_server_name', producer.domino_firewall_rules_list.getRow(i).source_server_name);
+	grFirewallRule.setValue('source_ip_address', producer.domino_firewall_rules_list.getRow(i).source_ip_address);
+	grFirewallRule.setValue('source_mask', producer.domino_firewall_rules_list.getRow(i).source_ip_mask);
+	grFirewallRule.setValue('dest_server_name', producer.domino_firewall_rules_list.getRow(i).dest_server_name);
+	grFirewallRule.setValue('dest_ip_address', producer.domino_firewall_rules_list.getRow(i).dest_ip_address);
+	grFirewallRule.setValue('dest_mask', producer.domino_firewall_rules_list.getRow(i).dest_ip_mask);
+	grFirewallRule.setValue('nese_service_name',  producer.domino_firewall_rules_list.getRow(i).nese_service_name);
+	grFirewallRule.setValue('port_number', producer.domino_firewall_rules_list.getRow(i).port_number);
+	grFirewallRule.setValue('protocol', producer.domino_firewall_rules_list.getRow(i).protocol);
+
+	// In case user is cloning the firewall request, we also need to clone source server network group, 
+	// dest server network group, dest port group and all the underlying tables
+	var src_group = producer.domino_firewall_rules_list.getRow(i).source_server_network_group;
+	var dst_group = producer.domino_firewall_rules_list.getRow(i).dest_server_network_group;
+	var port_group = producer.domino_firewall_rules_list.getRow(i).dest_ports_group;
+	if(producer.being_cloned == "true") {
+		src_group = cloneServerNetworkGroup(src_group);
+		dst_group = cloneServerNetworkGroup(dst_group);
+		port_group = clonePortGroup(port_group);
 	}
+	grFirewallRule.setValue('source_server_network_group', src_group);
+	grFirewallRule.setValue('dest_server_network_group', dst_group);
+	grFirewallRule.setValue('dest_ports_group', port_group);
+	// end of cloning
 
-// })();
+	grFirewallRule.insert();
+}
+
+function cloneServerNetworkGroup(sys_id) {
+	if(!sys_id) {
+		return null;
+	}
+	var gr = new GlideRecord('x_513186_domino_ap_fw_server_network_groups');
+	gr.get(sys_id);
+	if(!gr){
+		return null;
+	}
+	var result = new GlideRecord('x_513186_domino_ap_fw_server_network_groups');
+	result.initialize();
+	result.server_network_group_name = gr.server_network_group_name + " cloned";
+	result.server_network_group_owner = gr.server_network_group_owner;
+	result.insert();
+	
+	// Now cloning the server network list
+	var src_list = new GlideRecord('x_513186_domino_ap_fw_server_network_lists');
+	src_list.addQuery('server_network_group_ref', gr.sys_id);
+	src_list.query();
+	while(src_list.next()) {
+		var dst_list = new GlideRecord('x_513186_domino_ap_fw_server_network_lists');
+		dst_list.initialize();
+		dst_list.server_network_group_ref = result.sys_id;
+		dst_list.ip_address = src_list.ip_address;
+		dst_list.mask = src_list.mask;
+		dst_list.server_name = src_list.server_name;
+		dst_list.insert();
+	}
+	return result.sys_id;
+}
+function clonePortGroup(sys_id) {
+	if(!sys_id) {
+		return null;
+	}
+	var gr = new GlideRecord('x_513186_domino_ap_fw_ports_group');
+	gr.get(sys_id);
+	if(!gr){
+		return null;
+	}
+	var result = new GlideRecord('x_513186_domino_ap_fw_ports_group');
+	result.initialize();
+	result.port_group_name = gr.port_group_name + " cloned";
+	result.port_group_owner = gr.port_group_owner;
+	result.insert();
+	
+	// Now cloning the port list
+	var src_list = new GlideRecord('x_513186_domino_ap_fw_ports_list');
+	src_list.addQuery('ports_group_ref', gr.sys_id);
+	src_list.query();
+	while(src_list.next()) {
+		var dst_list = new GlideRecord('x_513186_domino_ap_fw_ports_list');
+		dst_list.initialize();
+		dst_list.ports_group_ref = result.sys_id;
+		dst_list.port = src_list.port;
+		dst_list.port_protocol = src_list.port_protocol;
+		dst_list.insert();
+	}
+	return result.sys_id;	
+}
 
 ]]></script>
         <short_description>Firewall  Request</short_description>
@@ -118,14 +171,14 @@ for (var j = 0; j < rowsCount; j++) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-31 03:01:52</sys_created_on>
         <sys_id>6e25a30c074f5010c11df2218c1ed042</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>Firewall Request</sys_name>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>sc_cat_item_producer_6e25a30c074f5010c11df2218c1ed042</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-11 20:31:24</sys_updated_on>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-17 12:16:20</sys_updated_on>
         <table_name>x_513186_domino_ap_firewall</table_name>
         <template/>
         <type>item</type>

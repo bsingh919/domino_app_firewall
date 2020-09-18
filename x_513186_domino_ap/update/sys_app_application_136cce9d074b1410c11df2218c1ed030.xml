@@ -7,7 +7,7 @@
         <hint/>
         <name>Firewall Rules</name>
         <order>100</order>
-        <roles>x_513186_domino_ap.firewall_rules_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-03 17:43:54</sys_created_on>

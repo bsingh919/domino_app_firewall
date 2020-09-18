@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Firewall Requests" max_length="40" name="x_513186_domino_ap_firewall" sizeclass="2" type="collection">
+    <element audit="true" extends="task" label="Firewall Requests" max_length="40" name="x_513186_domino_ap_firewall" sizeclass="19" type="collection">
         <element label="Domino Parent" max_length="32" name="domino_parent" reference="x_513186_domino_ap_firewall" type="reference"/>
         <element label="Estimated Start Date" max_length="32" name="estimated_start_date" type="glide_date_time"/>
-        <element label="Network Groups" max_length="80" name="network_groups" reference="x_513186_domino_ap_fw_network_group" type="glide_list"/>
         <element label="Requested Expiration Date" max_length="32" name="requested_expiration_date" type="glide_date_time"/>
-        <element label="Server Groups" max_length="80" name="server_groups" reference="x_513186_domino_ap_fw_server_group" type="glide_list"/>
         <element attributes="edge_encryption_enabled=true" label="Comment" max_length="6000" name="u_comment" type="string"/>
         <element attributes="encode_utf8=false" label="Deputies" mandatory="true" max_length="32" name="u_deputies" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="fast_track" label="Options" mandatory="true" max_length="40" name="u_options" type="string">

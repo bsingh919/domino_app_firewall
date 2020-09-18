@@ -7,7 +7,7 @@
         <hint/>
         <name>FW Inbound Ports</name>
         <order>100</order>
-        <roles>x_513186_domino_ap.fw_inbound_ports_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>cuong</sys_created_by>
         <sys_created_on>2020-09-09 09:13:48</sys_created_on>

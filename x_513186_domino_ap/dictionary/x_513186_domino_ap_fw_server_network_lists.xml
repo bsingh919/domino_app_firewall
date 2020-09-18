@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="FW Server Network Lists" max_length="40" name="x_513186_domino_ap_fw_server_network_lists" sizeclass="28" type="collection">
+        <element label="IP Address" max_length="80" name="ip_address" type="ip_addr"/>
+        <element label="Mask" max_length="80" name="mask" type="string"/>
+        <element label="Server Name" max_length="80" name="server_name" type="string"/>
+        <element display="true" label="Server Network Group Ref" max_length="32" name="server_network_group_ref" reference="x_513186_domino_ap_fw_server_network_groups" type="reference"/>
+        <index name="index">
+            <element name="server_network_group_ref"/>
+        </index>
+    </element>
+</database>

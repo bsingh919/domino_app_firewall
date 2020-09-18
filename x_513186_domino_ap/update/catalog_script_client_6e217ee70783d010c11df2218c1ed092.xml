@@ -19,14 +19,12 @@
         <order/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
-	
 	var search_params = getUrlParams(top.location.href);
 	var parent_id = search_params['parent_id'];
 	// if this is not cloning, don't need to do anything
 	if(!parent_id) {
 		return;
 	}
-	
 	
 	var ga = new GlideAjax("global.DominoUtils"); 
 	ga.addParam("sysparm_name","retrieveFwRequest");
@@ -52,6 +50,7 @@
 		g_form.setValue("description", result["description"]);
 		g_form.setValue("domino_firewall_rules_list", result["rules"]);
 		g_form.setValue("domino_parent", parent_id);
+		g_form.setValue("being_cloned", "true");
 	}
 	function getUrlParams(url) {
 		// Note: This function does not consider url hash
@@ -71,7 +70,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6e217ee70783d010c11df2218c1ed092</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>FW request onLoad</sys_name>
         <sys_overrides/>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
@@ -79,7 +78,7 @@
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>catalog_script_client_6e217ee70783d010c11df2218c1ed092</sys_update_name>
         <sys_updated_by>cuong</sys_updated_by>
-        <sys_updated_on>2020-09-11 15:35:51</sys_updated_on>
+        <sys_updated_on>2020-09-16 20:31:09</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

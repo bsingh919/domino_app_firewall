@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Copy of Firewall Request">dee4364d071f9410c11df2218c1ed0a1</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-15 12:18:00</sys_created_on>
+        <sys_id>52e4364d071f9410c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Copy of Firewall Request</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_52e4364d071f9410c11df2218c1ed0aa</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-15 12:18:00</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sc_cat_item_catalog_52e4364d071f9410c11df2218c1ed0aa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Firewall Request">dee4364d071f9410c11df2218c1ed0a1</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-15 12:18:00</sys_created_on><sys_id>52e4364d071f9410c11df2218c1ed0aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Copy of Firewall Request</sys_name><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>sc_cat_item_catalog_52e4364d071f9410c11df2218c1ed0aa</sys_update_name><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-15 12:18:00</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-713226511</payload_hash>
+        <record_name>Service Catalog.Copy of Firewall Request</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-15 12:18:00</sys_created_on>
+        <sys_id>9ae4364d071f9410c11df2218c1ed0ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17491b34a3f0000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-15 12:18:00</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>d2e4364d8b1f94100c4ad8b26e7a66ad</update_guid>
+        <update_guid_history>d2e4364d8b1f94100c4ad8b26e7a66ad:-713226511</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Copy of Firewall Request">13ab88550713d410c11df2218c1ed0ed</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-15 18:37:05</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>002844111c884793809b97bbd1154a49</sys_id>
+        <sys_metadata>52e4364d071f9410c11df2218c1ed0aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Copy of Firewall Request</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent display_value="">dee4364d071f9410c11df2218c1ed0a1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_52e4364d071f9410c11df2218c1ed0aa</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_52e4364d071f9410c11df2218c1ed0aa">9ae4364d071f9410c11df2218c1ed0ad</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-15 18:37:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>standard</category>
+        <client_script><![CDATA[function($scope, $rootScope, spUtil) {
+	var c = this;
+	c.expanded = !spUtil.isMobile();
+	c.expand = function() {
+		c.expanded = true;
+	};
+
+	var deregister = $rootScope.$on("sp.update.breadcrumbs", function(e, list) {
+		c.breadcrumbs = list;
+	});
+
+	$scope.$on('$destroy', function(){
+		deregister();
+	});
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.nav {
+  li {
+    padding: 10px 7px;
+
+    &gt; span {
+      &gt; a {
+          display: inline;
+      }
+
+      &gt; i {
+          padding-left: 15px;
+      }
+    }
+  }
+}
+
+.a-disabled {
+  cursor: default;
+  color: $sp-disabled-breadcrumb;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>breadcrumbs1</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	
+// 	var t = data;
+ 
+ data.breadcrumbs = [{label: "Page1", url: '#'}];
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-17 21:46:47</sys_created_on>
+        <sys_id>e94a07b907db1810c11df2218c1ed091</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>breadcrumbs1</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sp_widget_e94a07b907db1810c11df2218c1ed091</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-18 00:28:34</sys_updated_on>
+        <template><![CDATA[<div aria-label="${Page breadcrumbs}" role="navigation">
+<ul class="nav nav-pills nav-sm">
+  <li>
+    <span><a ng-href="?id={{portal.homepage_dv}}">${Firewall Request Home}</a>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i></span>
+  </li>
+  <li ng-if="!c.expanded &amp;&amp; c.breadcrumbs &amp;&amp; c.breadcrumbs.length > 2">
+    <span><a ng-click="c.expand()"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i></span>
+  </li>
+  <li ng-if="!c.breadcrumbs"><span><a style="display: inline;" class="a-disabled" aria-current="page" href>{{page.title}}</a></span></li>
+  <li ng-if="c.expanded || ((c.breadcrumbs.length > 2  &amp;&amp; $index > c.breadcrumbs.length-3) || (c.breadcrumbs.length <= 2))" ng-repeat="item in c.breadcrumbs track by $index" >
+    <span><a ng-if="!$last" ng-href="{{item.url}}">{{item.label}}</a>
+      <a class="a-disabled" ng-if="$last" aria-current="page" href>{{item.label}}</a>
+      <i aria-hidden="true" ng-if="!$last" class="fa fa-chevron-right"></i></span>
+  </li>
+</ul>
+</div>]]></template>
+    </sp_widget>
+</record_update>

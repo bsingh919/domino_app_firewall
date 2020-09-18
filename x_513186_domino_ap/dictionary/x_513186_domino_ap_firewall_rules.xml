@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Firewall Rules" max_length="40" name="x_513186_domino_ap_firewall_rules" sizeclass="2" type="collection">
+    <element label="Firewall Rules" max_length="40" name="x_513186_domino_ap_firewall_rules" sizeclass="33" type="collection">
         <element label="Attribute" max_length="16" name="attribute" type="string"/>
         <element display="true" label="Dest IP Address" max_length="80" name="dest_ip_address" type="ip_addr"/>
         <element label="Dest IP Mask" max_length="80" name="dest_mask" type="string"/>
-        <element label="Destination - Port Group" max_length="32" name="dest_port_group" reference="x_513186_domino_ap_fw_end_user_ports" type="reference"/>
+        <element label="Dest Ports Group" max_length="32" name="dest_ports_group" reference="x_513186_domino_ap_fw_ports_group" type="reference"/>
         <element label="Dest Server Name" max_length="120" name="dest_server_name" type="string"/>
-        <element label="Destination - Server/Network Group" max_length="32" name="dest_server_network_group" reference="x_513186_domino_ap_fw_server_group" type="reference"/>
+        <element label="Destination - Server/Network Group" max_length="32" name="dest_server_network_group" reference="x_513186_domino_ap_fw_server_network_groups" type="reference"/>
         <element label="Firewall Req ID" max_length="32" name="firewall_req_id" reference="x_513186_domino_ap_firewall" type="reference"/>
         <element label="NeSe Service Name" max_length="120" name="nese_service_name" type="string"/>
         <element label="Port Number" max_length="40" name="port_number" type="integer"/>
@@ -13,7 +13,7 @@
         <element label="Source IP Address" max_length="80" name="source_ip_address" type="ip_addr"/>
         <element label="Source IP Mask" max_length="80" name="source_mask" type="string"/>
         <element label="Source Server Name" max_length="120" name="source_server_name" type="string"/>
-        <element label="Source - Server/Network Group" max_length="32" name="source_server_network_group" reference="x_513186_domino_ap_fw_server_group" type="reference"/>
+        <element label="Source - Server/Network Group" max_length="32" name="source_server_network_group" reference="x_513186_domino_ap_fw_server_network_groups" type="reference"/>
         <index name="index">
             <element name="dest_server_network_group"/>
         </index>
@@ -24,7 +24,7 @@
             <element name="firewall_req_id"/>
         </index>
         <index name="index4">
-            <element name="dest_port_group"/>
+            <element name="dest_ports_group"/>
         </index>
     </element>
 </database>

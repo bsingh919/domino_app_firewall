@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="51fa2bb007579410c11df2218c1ed0ab" sys_domain="global" table="x_513186_domino_ap_fw_ports_list" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-14 21:35:39</sys_created_on>
+            <sys_id>95faeff007579410c11df2218c1ed03c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_ports_list" sys_domain="global" view="Default view">51fa2bb007579410c11df2218c1ed0ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-14 21:35:39</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>port</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-14 21:35:39</sys_created_on>
+            <sys_id>11faeff007579410c11df2218c1ed03d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_ports_list" sys_domain="global" view="Default view">51fa2bb007579410c11df2218c1ed0ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-14 21:35:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>port_protocol</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-14 21:35:39</sys_created_on>
+            <sys_id>95faeff007579410c11df2218c1ed03d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_ports_list" sys_domain="global" view="Default view">51fa2bb007579410c11df2218c1ed0ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-14 21:35:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-14 21:35:39</sys_created_on>
+            <sys_id>1dfaeff007579410c11df2218c1ed03d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_ports_list" sys_domain="global" view="Default view">51fa2bb007579410c11df2218c1ed0ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-14 21:35:39</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ports_group_ref</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-14 21:35:39</sys_created_on>
+            <sys_id>91faeff007579410c11df2218c1ed03e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_ports_list" sys_domain="global" view="Default view">51fa2bb007579410c11df2218c1ed0ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-14 21:35:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-14 21:35:39</sys_created_on>
+            <sys_id>19faeff007579410c11df2218c1ed03e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_ports_list" sys_domain="global" view="Default view">51fa2bb007579410c11df2218c1ed0ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-14 21:35:39</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_513186_domino_ap_fw_ports_list</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-14 21:35:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>51fa2bb007579410c11df2218c1ed0ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_513186_domino_ap_fw_ports_list</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_ui_section_51fa2bb007579410c11df2218c1ed0ab</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-14 21:35:39</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

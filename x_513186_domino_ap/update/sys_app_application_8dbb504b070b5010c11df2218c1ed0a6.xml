@@ -7,7 +7,7 @@
         <hint/>
         <name>FW Network Group</name>
         <order>100</order>
-        <roles>x_513186_domino_ap.fw_network_group_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-08 20:00:46</sys_created_on>

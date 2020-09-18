@@ -4,7 +4,7 @@
         <hint/>
         <name>FW Server Group</name>
         <order/>
-        <roles>x_513186_domino_ap.fw_server_group_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-08 19:53:45</sys_created_on>

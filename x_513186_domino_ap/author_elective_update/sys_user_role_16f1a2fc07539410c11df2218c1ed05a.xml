@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_513186_domino_ap.ports_list_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>ports_list_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-14 16:16:46</sys_created_on>
+        <sys_id>16f1a2fc07539410c11df2218c1ed05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_513186_domino_ap.ports_list_user</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_user_role_16f1a2fc07539410c11df2218c1ed05a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-14 16:16:46</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sys_user_role_16f1a2fc07539410c11df2218c1ed05a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_513186_domino_ap.ports_list_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>ports_list_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-14 16:16:46</sys_created_on><sys_id>16f1a2fc07539410c11df2218c1ed05a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_513186_domino_ap.ports_list_user</sys_name><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>sys_user_role_16f1a2fc07539410c11df2218c1ed05a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-14 16:16:46</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-254877440</payload_hash>
+        <record_name>x_513186_domino_ap.ports_list_user</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-14 16:16:47</sys_created_on>
+        <sys_id>52f1a2fc07539410c11df2218c1ed05e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1748d6789d80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-14 16:16:47</sys_updated_on>
+        <type>Role</type>
+        <update_guid>9af1a2fc8a5394107dfc2ebe4387f05d</update_guid>
+        <update_guid_history>9af1a2fc8a5394107dfc2ebe4387f05d:-254877440</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_513186_domino_ap.ports_list_user">c0314965071fd410c11df2218c1ed0c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-16 17:09:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>113b75ad41d64324a899ba2715402810</sys_id>
+        <sys_metadata>16f1a2fc07539410c11df2218c1ed05a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_513186_domino_ap.ports_list_user</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sys_user_role_16f1a2fc07539410c11df2218c1ed05a</sys_update_name>
+        <sys_update_version display_value="sys_user_role_16f1a2fc07539410c11df2218c1ed05a">52f1a2fc07539410c11df2218c1ed05e</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-16 17:09:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

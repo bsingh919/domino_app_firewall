@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="DELETE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_513186_domino_ap_fw_server_group</basic_apply_to>
+        <basic_query_from>x_513186_domino_ap_firewall_rules</basic_query_from>
+        <insert_callback/>
+        <name>FW Server Group</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+
+	current.addQuery('source_server_network_group',  parent.sys_id);
+	
+})(current, parent);]]></query_with>
+        <reference_field>dest_port_group</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-09 20:45:53</sys_created_on>
+        <sys_id>09bea59f07479010c11df2218c1ed098</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>FW Server Group</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_relationship_09bea59f07479010c11df2218c1ed098</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-13 14:40:25</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="DELETE" query="documentkey=09bea59f07479010c11df2218c1ed098"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sys_relationship_09bea59f07479010c11df2218c1ed098</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;x_513186_domino_ap_fw_server_group&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;x_513186_domino_ap_firewall_rules&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;FW Server Group&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+
+	current.addQuery('source_server_network_group',  parent.sys_id);
+	
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;dest_port_group&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-09 20:45:53&lt;/sys_created_on&gt;&lt;sys_id&gt;09bea59f07479010c11df2218c1ed098&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;FW Server Group&lt;/sys_name&gt;&lt;sys_package display_value="Domino App" source="x_513186_domino_ap"&gt;21e2d540070b5010c11df2218c1ed04b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Domino App"&gt;21e2d540070b5010c11df2218c1ed04b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_09bea59f07479010c11df2218c1ed098&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;cuong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-13 14:40:25&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=09bea59f07479010c11df2218c1ed098"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1356407705</payload_hash>
+        <record_name>FW Server Group</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-13 14:40:25</sys_created_on>
+        <sys_id>8d528d6c07175410c11df2218c1ed0b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17487e8f6d90000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-13 14:40:25</sys_updated_on>
+        <type>Relationship</type>
+        <update_guid>0152096c9b1754100aadc34df0bf94c8</update_guid>
+        <update_guid_history>0152096c9b1754100aadc34df0bf94c8:-1356407705,9321016c291754104370ed0796d51cba:445444065,a8783957a38790103ebcc0ac112092ee:553801726,15e7b11795879010de4addc3d21b28c2:-807398409,2ca5f1d3e7879010cf81637bac252777:-1546757402,4c0575d3c08790106cf5130b12cbb644:1876821818,800479934d879010523906cfc54f87f4:1493860741,2b9f21df0247901043e5b645a2d4224b:-1180595553</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-16 19:49:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_relationship">sys_relationship</sys_db_object>
+        <sys_id>a576daa7b2524fb4bafbe21e08b7d044</sys_id>
+        <sys_metadata>09bea59f07479010c11df2218c1ed098</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FW Server Group</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent display_value="">c6f990c7070b5010c11df2218c1ed0a8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sys_relationship_09bea59f07479010c11df2218c1ed098</sys_update_name>
+        <sys_update_version display_value="sys_relationship_09bea59f07479010c11df2218c1ed098">8d528d6c07175410c11df2218c1ed0b5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-16 19:49:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related action="DELETE" sys_domain="global" table="x_513186_domino_ap_fw_server_group" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_513186_domino_ap_fw_end_user_ports.server_group_ref</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-13 14:48:07</sys_created_on>
+            <sys_id>f514c1ec07175410c11df2218c1ed011</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-13 14:48:07</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_513186_domino_ap_fw_inbound_ports.server_group_ref</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-13 14:48:07</sys_created_on>
+            <sys_id>7d14c1ec07175410c11df2218c1ed011</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-13 14:48:07</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_513186_domino_ap_fw_outbound_ports.server_group_ref</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-13 14:48:07</sys_created_on>
+            <sys_id>f114c1ec07175410c11df2218c1ed012</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-13 14:48:07</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>x_513186_domino_ap_firewall_rules.source_server_network_group</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-13 14:48:07</sys_created_on>
+            <sys_id>7914c1ec07175410c11df2218c1ed012</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-13 14:48:07</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>x_513186_domino_ap_firewall_rules.dest_server_network_group</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-13 14:48:07</sys_created_on>
+            <sys_id>fd14c1ec07175410c11df2218c1ed012</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-13 14:48:07</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>FW Server Group - Default view</calculated_name>
+            <filter/>
+            <name>x_513186_domino_ap_fw_server_group</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-13 14:48:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>311449ac07175410c11df2218c1ed0c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>FW Server Group - Default view</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_ui_related_x_513186_domino_ap_fw_server_group_null</sys_update_name>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-13 14:48:07</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sys_ui_related_x_513186_domino_ap_fw_server_group_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_513186_domino_ap_fw_server_group" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id><order_by/><position>0</position><related_list>x_513186_domino_ap_fw_end_user_ports.server_group_ref</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-13 14:48:07</sys_created_on><sys_id>f514c1ec07175410c11df2218c1ed011</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-13 14:48:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id><order_by/><position>1</position><related_list>x_513186_domino_ap_fw_inbound_ports.server_group_ref</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-13 14:48:07</sys_created_on><sys_id>7d14c1ec07175410c11df2218c1ed011</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-13 14:48:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id><order_by/><position>2</position><related_list>x_513186_domino_ap_fw_outbound_ports.server_group_ref</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-13 14:48:07</sys_created_on><sys_id>f114c1ec07175410c11df2218c1ed012</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-13 14:48:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id><order_by/><position>3</position><related_list>x_513186_domino_ap_firewall_rules.source_server_network_group</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-13 14:48:07</sys_created_on><sys_id>7914c1ec07175410c11df2218c1ed012</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-13 14:48:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="FW Server Group - Default view" name="x_513186_domino_ap_fw_server_group" related_list="NULL" sys_domain="global" view="Default view">311449ac07175410c11df2218c1ed0c9</list_id><order_by/><position>4</position><related_list>x_513186_domino_ap_firewall_rules.dest_server_network_group</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-13 14:48:07</sys_created_on><sys_id>fd14c1ec07175410c11df2218c1ed012</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-13 14:48:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>FW Server Group - Default view</calculated_name><filter/><name>x_513186_domino_ap_fw_server_group</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-13 14:48:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>311449ac07175410c11df2218c1ed0c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FW Server Group - Default view</sys_name><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>sys_ui_related_x_513186_domino_ap_fw_server_group_null</sys_update_name><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-13 14:48:07</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+        <payload_hash>1225969756</payload_hash>
+        <record_name>FW Server Group</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-13 14:48:07</sys_created_on>
+        <sys_id>3114c1ec07175410c11df2218c1ed015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17487f001190000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-13 14:48:07</sys_updated_on>
+        <type>Related Lists</type>
+        <update_guid>f514c1ecb517541039b3a0f21ba55414</update_guid>
+        <update_guid_history>f514c1ecb517541039b3a0f21ba55414:1225969756,b161c16c7f17541049fdec13e1fa50b2:2073165860,0241416ce3175410a0b8f435ac0319cf:-2111583196,41a0c92c5017541010618a12bcdc474d:822799396,f6cae9dbd9479010f4c80a5a8bb53e0d:714099939</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-15 14:50:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_related_list">sys_ui_related_list</sys_db_object>
+        <sys_id>1dbbf9c8b95e4a5d9be819074e2367c9</sys_id>
+        <sys_metadata>311449ac07175410c11df2218c1ed0c9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FW Server Group - Default view</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent display_value="">c6f990c7070b5010c11df2218c1ed0a8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sys_ui_related_x_513186_domino_ap_fw_server_group_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_related_x_513186_domino_ap_fw_server_group_null">3114c1ec07175410c11df2218c1ed015</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-15 14:50:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

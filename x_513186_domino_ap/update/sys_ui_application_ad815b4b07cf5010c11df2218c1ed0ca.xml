@@ -4,7 +4,7 @@
         <hint/>
         <name>FW Outbound Ports</name>
         <order/>
-        <roles>x_513186_domino_ap.fw_outbound_ports_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>cuong</sys_created_by>
         <sys_created_on>2020-09-09 09:15:09</sys_created_on>
