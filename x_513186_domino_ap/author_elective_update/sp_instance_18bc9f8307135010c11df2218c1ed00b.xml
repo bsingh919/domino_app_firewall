@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">d568963d075b1810c11df2218c1ed044</sp_column>
+        <sp_widget display_value="breadcrumbs_fwreq_new">654b0dfa07131010c11df2218c1ed080</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-21 20:19:40</sys_created_on>
+        <sys_id>18bc9f8307135010c11df2218c1ed00b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sp_instance_18bc9f8307135010c11df2218c1ed00b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-21 20:19:40</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=18bc9f8307135010c11df2218c1ed00b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sp_instance_18bc9f8307135010c11df2218c1ed00b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">d568963d075b1810c11df2218c1ed044</sp_column><sp_widget display_value="breadcrumbs_fwreq_new">654b0dfa07131010c11df2218c1ed080</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-21 20:19:40</sys_created_on><sys_id>18bc9f8307135010c11df2218c1ed00b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>sp_instance_18bc9f8307135010c11df2218c1ed00b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-21 20:19:40</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=18bc9f8307135010c11df2218c1ed00b"/></record_update>]]></payload>
+        <payload_hash>-273174088</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-21 20:19:40</sys_created_on>
+        <sys_id>10bc9f8307135010c11df2218c1ed00e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174b2526ddc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-21 20:19:40</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>58bc9f8374135010e3848ae1ac52250d</update_guid>
+        <update_guid_history>58bc9f8374135010e3848ae1ac52250d:-273174088</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">e22733af07179010c11df2218c1ed055</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-23 11:32:18</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>2b538d16b18d4ec3bcf99df4c6e1dcf9</sys_id>
+        <sys_metadata>18bc9f8307135010c11df2218c1ed00b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sp_instance_18bc9f8307135010c11df2218c1ed00b</sys_update_name>
+        <sys_update_version display_value="sp_instance_18bc9f8307135010c11df2218c1ed00b">10bc9f8307135010c11df2218c1ed00e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-23 11:32:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

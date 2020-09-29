@@ -25,11 +25,15 @@
 	if(!parent_id) {
 		return;
 	}
-	
-	var ga = new GlideAjax("global.DominoUtils"); 
-	ga.addParam("sysparm_name","retrieveFwRequest");
-	ga.addParam("sys_id", parent_id);
-	ga.getXML(getResponse);
+	try {
+		var ga = new GlideAjax("global.DominoUtils"); 
+		ga.addParam("sysparm_name","retrieveFwRequest");
+		ga.addParam("sys_id", parent_id);
+		ga.getXML(getResponse);
+	}
+	catch(err) {
+		alert("Domino app got an error: " + err.message);
+	}
 	
 	function getResponse(response) {
 		var answer = response.responseXML.documentElement.getAttribute("answer");
@@ -70,7 +74,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6e217ee70783d010c11df2218c1ed092</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>FW request onLoad</sys_name>
         <sys_overrides/>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
@@ -78,7 +82,7 @@
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>catalog_script_client_6e217ee70783d010c11df2218c1ed092</sys_update_name>
         <sys_updated_by>cuong</sys_updated_by>
-        <sys_updated_on>2020-09-16 20:31:09</sys_updated_on>
+        <sys_updated_on>2020-09-21 10:25:00</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

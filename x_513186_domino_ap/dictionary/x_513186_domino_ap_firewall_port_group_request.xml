@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Firewall Port Group Request" max_length="40" name="x_513186_domino_ap_firewall_port_group_request" sizeclass="0" type="collection">
+        <element label="Port Group Ref" max_length="32" name="port_group_ref" reference="x_513186_domino_ap_fw_ports_group" type="reference"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+    </element>
+</database>

@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Firewall Requests" max_length="40" name="x_513186_domino_ap_firewall" sizeclass="19" type="collection">
+    <element audit="true" extends="task" label="Firewall Requests" max_length="40" name="x_513186_domino_ap_firewall" sizeclass="23" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="CS Approval" max_length="40" name="cs_approval" type="string"/>
+        <element default="true" label="CS Approval Needed?" max_length="40" name="cs_approval_nedded" type="boolean"/>
+        <element default="true" label="CS Approval Needed" max_length="40" name="cs_approval_needed" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="not_yet_requested" label="CS Approval state" max_length="40" name="cs_approval_state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not yet requested" sequence="0" value="not_yet_requested"/>
+                <element inactive_on_update="false" label="Requested" sequence="1" value="requested"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+            </choice>
+        </element>
         <element label="Domino Parent" max_length="32" name="domino_parent" reference="x_513186_domino_ap_firewall" type="reference"/>
         <element label="Estimated Start Date" max_length="32" name="estimated_start_date" type="glide_date_time"/>
         <element label="Requested Expiration Date" max_length="32" name="requested_expiration_date" type="glide_date_time"/>
+        <element label="testing" max_length="40" name="testing" type="integer"/>
+        <element default="0" label="User Submision State" max_length="40" name="user_submision_state" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Comment" max_length="6000" name="u_comment" type="string"/>
         <element attributes="encode_utf8=false" label="Deputies" mandatory="true" max_length="32" name="u_deputies" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="fast_track" label="Options" mandatory="true" max_length="40" name="u_options" type="string">

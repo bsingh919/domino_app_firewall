@@ -47,7 +47,7 @@
         <record/>
         <record_producer_table/>
         <reference>x_513186_domino_ap_fw_server_network_groups</reference>
-        <reference_qual/>
+        <reference_qual>javascript: new x_513186_domino_ap.DominoFilterUtils().getSvrGroup()</reference_qual>
         <reference_qual_condition/>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
@@ -59,20 +59,20 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-15 17:34:32</sys_created_on>
         <sys_id>cf2df7c907df9410c11df2218c1ed0ba</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Dest Server Network Group</sys_name>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>item_option_new_cf2df7c907df9410c11df2218c1ed0ba</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-15 17:34:32</sys_updated_on>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-22 19:05:25</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
         <ui_page/>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set display_value="Domino Firewall Rules List">675d2c3807c3d010c11df2218c1ed021</variable_set>

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Firewall Rules" max_length="40" name="x_513186_domino_ap_firewall_rules" sizeclass="33" type="collection">
+    <element label="Firewall Rules" max_length="40" name="x_513186_domino_ap_firewall_rules" sizeclass="42" type="collection">
         <element label="Attribute" max_length="16" name="attribute" type="string"/>
         <element display="true" label="Dest IP Address" max_length="80" name="dest_ip_address" type="ip_addr"/>
         <element label="Dest IP Mask" max_length="80" name="dest_mask" type="string"/>
         <element label="Dest Ports Group" max_length="32" name="dest_ports_group" reference="x_513186_domino_ap_fw_ports_group" type="reference"/>
         <element label="Dest Server Name" max_length="120" name="dest_server_name" type="string"/>
         <element label="Destination - Server/Network Group" max_length="32" name="dest_server_network_group" reference="x_513186_domino_ap_fw_server_network_groups" type="reference"/>
+        <element label="Domino Parent" max_length="32" name="domino_parent" reference="x_513186_domino_ap_firewall_rules" type="reference"/>
+        <element choice="1" label="Domino Status" max_length="40" name="domino_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Added" value="added"/>
+                <element inactive_on_update="false" label="Deleted" value="Deleted"/>
+                <element inactive_on_update="false" label="Normal" value="normal"/>
+            </choice>
+        </element>
         <element label="Firewall Req ID" max_length="32" name="firewall_req_id" reference="x_513186_domino_ap_firewall" type="reference"/>
+        <element label="FW Rule Deleted" max_length="32" name="fw_rule_deleted" type="boolean"/>
         <element label="NeSe Service Name" max_length="120" name="nese_service_name" type="string"/>
         <element label="Port Number" max_length="40" name="port_number" type="integer"/>
         <element label="Protocol" max_length="40" name="protocol" type="string"/>
@@ -18,12 +27,15 @@
             <element name="dest_server_network_group"/>
         </index>
         <index name="index2">
-            <element name="source_server_network_group"/>
+            <element name="domino_parent"/>
         </index>
         <index name="index3">
-            <element name="firewall_req_id"/>
+            <element name="source_server_network_group"/>
         </index>
         <index name="index4">
+            <element name="firewall_req_id"/>
+        </index>
+        <index name="index5">
             <element name="dest_ports_group"/>
         </index>
     </element>

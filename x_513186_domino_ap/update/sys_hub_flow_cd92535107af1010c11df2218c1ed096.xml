@@ -1,0 +1,1973 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>fw_request</internal_name>
+        <label_cache>[{"name":"136faf20-6ab4-4af5-b9c2-17572b7fb4ec.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cc9754c6-ce92-4ef3-a2b1-c2471bb972d1.fw_request_out","label":"2.1➛FW Request out","reference":"x_513186_domino_ap_firewall","reference_display":"FW Request out","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b65fcab0-b545-4724-937f-833bca363474"}},{"name":"cc9754c6-ce92-4ef3-a2b1-c2471bb972d1.csapproval","label":"2.1➛CSApproval","reference_display":"CSApproval","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"83e09b75-7b4b-4e1a-a386-8030a5463143"}},{"name":"62561b74-bba3-425d-8ae4-8391e7f1746b.table_name","label":"2.3.2➛Firewall Requests Table","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"62561b74-bba3-425d-8ae4-8391e7f1746b.record","label":"2.3.2➛Firewall Requests Record","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_requested_for.first_name","label":"1➛Firewall Requests Record➛Requested for➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.number","label":"1➛Firewall Requests Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_513186_domino_ap_firewall","column_name":"number"},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.assignment_group.email","label":"1➛Firewall Requests Record➛Assignment group➛Group email","reference":"","reference_display":"Group email","type":"email","base_type":"email","parent_table_name":"sys_user_group","column_name":"email"},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_requested_for.email","label":"1➛Firewall Requests Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"f15a443d-f0f5-40ad-b7d6-f0313f6f18cd.email","label":"2.3.1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_service_manager","label":"1➛Firewall Requests Record➛Service Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_513186_domino_ap_firewall","column_name":"u_service_manager"},{"name":"059f6a15-e3d4-4fc6-b7e7-29fadd22c248.approval_state","label":"2.1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛Firewall Requests Record","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.table_name","label":"1➛Firewall Requests Table","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record","label":"1➛Firewall Requests Record","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.cs_approval_needed","label":"1➛Firewall Requests Record➛CS Approval Needed","reference":"","reference_display":"CS Approval Needed","type":"boolean","base_type":"boolean","parent_table_name":"x_513186_domino_ap_firewall","column_name":"cs_approval_needed"},{"name":"2c872930-7b25-40d7-97ea-bb0dae6733e2.record","label":"2.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2c872930-7b25-40d7-97ea-bb0dae6733e2.table_name","label":"2.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.cs_approval","label":"1➛Firewall Requests Record➛CS Approval","reference":"","reference_display":"CS Approval","type":"string","base_type":"string","parent_table_name":"x_513186_domino_ap_firewall","column_name":"cs_approval"},{"name":"f621216d-cf90-426e-814f-9a7c7a9d452a.record","label":"2.2➛Firewall Requests Record","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f621216d-cf90-426e-814f-9a7c7a9d452a.table_name","label":"2.2➛Firewall Requests Table","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.approval","label":"1➛Firewall Requests Record➛SO Approval state","reference":"","reference_display":"SO Approval state","type":"choice","base_type":"choice","parent_table_name":"x_513186_domino_ap_firewall","column_name":"approval"},{"name":"a9ce71bc-8edf-4243-bffd-6d5fd9323e95.record","label":"4.1➛Firewall Requests Record","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9ce71bc-8edf-4243-bffd-6d5fd9323e95.table_name","label":"4.1➛Firewall Requests Table","reference":"x_513186_domino_ap_firewall","reference_display":"Firewall Requests Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"52453479-5bfc-482a-943b-4a3007e3ffca.email","label":"4.2➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_service_manager.email","label":"1➛Firewall Requests Record➛Service Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"f6de4c04-4996-4337-9e73-0ae13bf4a75b.record","label":"5.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f6de4c04-4996-4337-9e73-0ae13bf4a75b.table_name","label":"5.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>FW Request</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:21:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd92535107af1010c11df2218c1ed096</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>FW Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_hub_flow_cd92535107af1010c11df2218c1ed096</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:56</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=cd92535107af1010c11df2218c1ed096"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cd92535107af1010c11df2218c1ed096"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=cd92535107af1010c11df2218c1ed096^sys_idNOT IN0a0cbbd907ef1010c11df2218c1ed0d8,160cbbd907ef1010c11df2218c1ed0f2,420cbbd907ef1010c11df2218c1ed0d4,460cbbd907ef1010c11df2218c1ed0dc,48d75f1507af1010c11df2218c1ed0f9,83a87b5907ef1010c11df2218c1ed0a8,8a0cbbd907ef1010c11df2218c1ed0de,8e0cbbd907ef1010c11df2218c1ed0ef,c1d413d107af1010c11df2218c1ed073,cfa87b5907ef1010c11df2218c1ed09d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>4.2</order>
+        <parent_ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>0a0cbbd907ef1010c11df2218c1ed0d8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>52453479-5bfc-482a-943b-4a3007e3ffca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0a0cbbd907ef1010c11df2218c1ed0d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0a0cbbd907ef1010c11df2218c1ed0d8</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>060cbbd907ef1010c11df2218c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0a0cbbd907ef1010c11df2218c1ed0d8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>c60cbbd907ef1010c11df2218c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0a0cbbd907ef1010c11df2218c1ed0d8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>860cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.number}}" data-key="606"&gt;
+&lt;div class="data_pill  accepts_transform_functions isFocused" contenteditable="false" data-pillvalue="{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.number}}"&gt;1➛Firewall Requests Record➛Number&lt;button id="" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;input class="delete_pill btn-icon icon-cross" type="button" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span contenteditable="false" data-slate-void="true" data-key="606"&gt;&lt;span contenteditable="false"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span data-key="607" data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMmlubGluZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJkYXRhcGlsbCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJwaWxsVmFsdWUlMjIlM0ElMjIlN0IlN0JlNDkwNGRhYS1lMjZjLTRmMjYtODk1OS1lZGU5YWNlOTA4YjEucmVjb3JkLm51bWJlciU3RCU3RCUyMiUyQyUyMnBpbGxMYWJlbCUyMiUzQSUyMjElRTIlOUUlOUJGaXJld2FsbCUyMFJlcXVlc3RzJTIwUmVjb3JkJUUyJTlFJTlCTnVtYmVyJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMHJlamVjdGVkJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlNUQlN0Q="&gt;&lt;span data-slate-leaf="true" data-offset-key="607:0"&gt;&lt;span data-slate-content="true"&gt; rejected&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.assignment_group.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>ce0cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.number}} rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>c20cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_service_manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>4a0cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>0e0cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8e0cbbd907ef1010c11df2218c1ed0f1</block>
+        <comment/>
+        <connected_to>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>160cbbd907ef1010c11df2218c1ed0f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:56</sys_updated_on>
+        <ui_id>eba1a750-9ece-49f6-9156-f51584534dc6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=160cbbd907ef1010c11df2218c1ed0f2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>4.1</order>
+        <parent_ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>420cbbd907ef1010c11df2218c1ed0d4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>a9ce71bc-8edf-4243-bffd-6d5fd9323e95</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=420cbbd907ef1010c11df2218c1ed0d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>420cbbd907ef1010c11df2218c1ed0d4</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>4e0cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>420cbbd907ef1010c11df2218c1ed0d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8a0cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>approval=rejected^work_notes=SO approval Rejected</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=420cbbd907ef1010c11df2218c1ed0d4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>420cbbd907ef1010c11df2218c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>460cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>420cbbd907ef1010c11df2218c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>420cbbd907ef1010c11df2218c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>0a0cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ca0cbbd907ef1010c11df2218c1ed0db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>460cbbd907ef1010c11df2218c1ed0dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>a081f563-46fa-40b1-9a69-a18e4f533ff8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=460cbbd907ef1010c11df2218c1ed0dc"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ccd75f1507af1010c11df2218c1ed0f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>48d75f1507af1010c11df2218c1ed0f9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>80379e59-fc8c-4031-92a0-43075e6ac7da</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=48d75f1507af1010c11df2218c1ed0f9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>48d75f1507af1010c11df2218c1ed0f9</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>c4d75f1507af1010c11df2218c1ed0fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:44:40</sys_updated_on>
+        <value>CS Approval needed</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=48d75f1507af1010c11df2218c1ed0f9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>48d75f1507af1010c11df2218c1ed0f9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>44d75f1507af1010c11df2218c1ed0fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:44:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.cs_approval_needed}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>48d75f1507af1010c11df2218c1ed0f9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>80d75f1507af1010c11df2218c1ed0fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:44:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment>req for SO approval</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:14</sys_created_on>
+        <sys_id>83a87b5907ef1010c11df2218c1ed0a8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>136faf20-6ab4-4af5-b9c2-17572b7fb4ec</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=83a87b5907ef1010c11df2218c1ed0a8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>03a87b5907ef1010c11df2218c1ed0ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>4fa87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>8ba87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>c3a87b5907ef1010c11df2218c1ed0ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=83a87b5907ef1010c11df2218c1ed0a8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>47a87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_service_manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>4ba87b5907ef1010c11df2218c1ed0a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>83a87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>0fa87b5907ef1010c11df2218c1ed0a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>cfa87b5907ef1010c11df2218c1ed0a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>0ba87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">060cbbd907ef1010c11df2218c1ed0de</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8a0cbbd907ef1010c11df2218c1ed0de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8a0cbbd907ef1010c11df2218c1ed0de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8a0cbbd907ef1010c11df2218c1ed0de</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>060cbbd907ef1010c11df2218c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>SO approval rejected</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8a0cbbd907ef1010c11df2218c1ed0de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8a0cbbd907ef1010c11df2218c1ed0de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.approval}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8a0cbbd907ef1010c11df2218c1ed0de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>ce0cbbd907ef1010c11df2218c1ed0e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>update State = implementation</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>5.1</order>
+        <parent_ui_id>eba1a750-9ece-49f6-9156-f51584534dc6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8e0cbbd907ef1010c11df2218c1ed0ef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>f6de4c04-4996-4337-9e73-0ae13bf4a75b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8e0cbbd907ef1010c11df2218c1ed0ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e0cbbd907ef1010c11df2218c1ed0ef</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8a0cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e0cbbd907ef1010c11df2218c1ed0ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>c60cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8e0cbbd907ef1010c11df2218c1ed0ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8e0cbbd907ef1010c11df2218c1ed0ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8e0cbbd907ef1010c11df2218c1ed0ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>ce0cbbd907ef1010c11df2218c1ed0f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8e0cbbd907ef1010c11df2218c1ed0ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>460cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>assign the new request to assigment group.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>c1d413d107af1010c11df2218c1ed073</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>e4904daa-e26c-4f26-8959-ede9ace908b1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c1d413d107af1010c11df2218c1ed073"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c1d413d107af1010c11df2218c1ed073</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>09d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <value>assignment_group={"display":"Snow Dev","value":"3355217507d65450c11df2218c1ed068"}</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c1d413d107af1010c11df2218c1ed073</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>c9d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c1d413d107af1010c11df2218c1ed073"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c1d413d107af1010c11df2218c1ed073</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>c1d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c1d413d107af1010c11df2218c1ed073</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>0dd413d107af1010c11df2218c1ed074</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c1d413d107af1010c11df2218c1ed073</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>85d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.1</order>
+        <parent_ui_id>80379e59-fc8c-4031-92a0-43075e6ac7da</parent_ui_id>
+        <subflow display_value="CS approval">aa273b1907ef1010c11df2218c1ed016</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:14</sys_created_on>
+        <sys_id>cfa87b5907ef1010c11df2218c1ed09d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>cc9754c6-ce92-4ef3-a2b1-c2471bb972d1</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cfa87b5907ef1010c11df2218c1ed09d"/>
+    <sys_element_mapping action="delete_multiple" query="id=cfa87b5907ef1010c11df2218c1ed09d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fw_request_in</field>
+        <id>cfa87b5907ef1010c11df2218c1ed09d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:14</sys_created_on>
+        <sys_id>cfa87b5907ef1010c11df2218c1ed09f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_aa273b1907ef1010c11df2218c1ed016</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=cd92535107af1010c11df2218c1ed096^sys_idNOT IN30b3179107af1010c11df2218c1ed036"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>30b3179107af1010c11df2218c1ed036</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=30b3179107af1010c11df2218c1ed036"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>30b3179107af1010c11df2218c1ed036</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>34b3179107af1010c11df2218c1ed037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:26:42</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>30b3179107af1010c11df2218c1ed036</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>7cb3179107af1010c11df2218c1ed036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:26:42</sys_updated_on>
+        <value>state=1</value>
+        <variable display_value="">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=cd92535107af1010c11df2218c1ed096^sys_idNOT IN8d92535107af1010c11df2218c1ed097"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>cd92535107af1010c11df2218c1ed096</id>
+        <name>FW Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:21:48</sys_created_on>
+        <sys_id>8d92535107af1010c11df2218c1ed097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:21:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=cd92535107af1010c11df2218c1ed096^sys_idNOT IN70b3179107af1010c11df2218c1ed029,7cb3179107af1010c11df2218c1ed02e,f8b31b5107af1010c11df2218c1ed02e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDfd0c33d975ef1010f1c6ae823320e3b5,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="FW Request">cd92535107af1010c11df2218c1ed096</model>
+        <model_id>cd92535107af1010c11df2218c1ed096</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_cd92535107af1010c11df2218c1ed096</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>70b3179107af1010c11df2218c1ed029</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="FW Request">cd92535107af1010c11df2218c1ed096</model>
+        <model_id>cd92535107af1010c11df2218c1ed096</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_cd92535107af1010c11df2218c1ed096</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>7cb3179107af1010c11df2218c1ed02e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:26:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="FW Request">cd92535107af1010c11df2218c1ed096</model>
+        <model_id>cd92535107af1010c11df2218c1ed096</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_cd92535107af1010c11df2218c1ed096</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>f8b31b5107af1010c11df2218c1ed02e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:26:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=cd92535107af1010c11df2218c1ed096^sys_idNOT IN0a0cbbd907ef1010c11df2218c1ed0d8,420cbbd907ef1010c11df2218c1ed0d4,83a87b5907ef1010c11df2218c1ed0a8,8e0cbbd907ef1010c11df2218c1ed0ef,c1d413d107af1010c11df2218c1ed073"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>4.2</order>
+        <parent_ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>0a0cbbd907ef1010c11df2218c1ed0d8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>52453479-5bfc-482a-943b-4a3007e3ffca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0a0cbbd907ef1010c11df2218c1ed0d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0a0cbbd907ef1010c11df2218c1ed0d8</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>060cbbd907ef1010c11df2218c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0a0cbbd907ef1010c11df2218c1ed0d8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>c60cbbd907ef1010c11df2218c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0a0cbbd907ef1010c11df2218c1ed0d8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>860cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.number}}" data-key="606"&gt;
+&lt;div class="data_pill  accepts_transform_functions isFocused" contenteditable="false" data-pillvalue="{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.number}}"&gt;1➛Firewall Requests Record➛Number&lt;button id="" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;input class="delete_pill btn-icon icon-cross" type="button" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span contenteditable="false" data-slate-void="true" data-key="606"&gt;&lt;span contenteditable="false"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span data-key="607" data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMmlubGluZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJkYXRhcGlsbCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJwaWxsVmFsdWUlMjIlM0ElMjIlN0IlN0JlNDkwNGRhYS1lMjZjLTRmMjYtODk1OS1lZGU5YWNlOTA4YjEucmVjb3JkLm51bWJlciU3RCU3RCUyMiUyQyUyMnBpbGxMYWJlbCUyMiUzQSUyMjElRTIlOUUlOUJGaXJld2FsbCUyMFJlcXVlc3RzJTIwUmVjb3JkJUUyJTlFJTlCTnVtYmVyJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMHJlamVjdGVkJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlNUQlN0Q="&gt;&lt;span data-slate-leaf="true" data-offset-key="607:0"&gt;&lt;span data-slate-content="true"&gt; rejected&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.assignment_group.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>ce0cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.number}} rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>c20cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_service_manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>4a0cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0a0cbbd907ef1010c11df2218c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>0e0cbbd907ef1010c11df2218c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>4.1</order>
+        <parent_ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>420cbbd907ef1010c11df2218c1ed0d4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>a9ce71bc-8edf-4243-bffd-6d5fd9323e95</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=420cbbd907ef1010c11df2218c1ed0d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>420cbbd907ef1010c11df2218c1ed0d4</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>4e0cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>420cbbd907ef1010c11df2218c1ed0d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8a0cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>approval=rejected^work_notes=SO approval Rejected</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=420cbbd907ef1010c11df2218c1ed0d4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>420cbbd907ef1010c11df2218c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>460cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>420cbbd907ef1010c11df2218c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>420cbbd907ef1010c11df2218c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>0a0cbbd907ef1010c11df2218c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment>req for SO approval</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:14</sys_created_on>
+        <sys_id>83a87b5907ef1010c11df2218c1ed0a8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>136faf20-6ab4-4af5-b9c2-17572b7fb4ec</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=83a87b5907ef1010c11df2218c1ed0a8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>03a87b5907ef1010c11df2218c1ed0ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>4fa87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>8ba87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a87b5907ef1010c11df2218c1ed0a8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>c3a87b5907ef1010c11df2218c1ed0ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=83a87b5907ef1010c11df2218c1ed0a8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>47a87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_service_manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>4ba87b5907ef1010c11df2218c1ed0a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>83a87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>0fa87b5907ef1010c11df2218c1ed0a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>cfa87b5907ef1010c11df2218c1ed0a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>83a87b5907ef1010c11df2218c1ed0a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:15</sys_created_on>
+        <sys_id>0ba87b5907ef1010c11df2218c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>update State = implementation</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>5.1</order>
+        <parent_ui_id>eba1a750-9ece-49f6-9156-f51584534dc6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8e0cbbd907ef1010c11df2218c1ed0ef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>f6de4c04-4996-4337-9e73-0ae13bf4a75b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8e0cbbd907ef1010c11df2218c1ed0ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e0cbbd907ef1010c11df2218c1ed0ef</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8a0cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e0cbbd907ef1010c11df2218c1ed0ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>c60cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8e0cbbd907ef1010c11df2218c1ed0ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8e0cbbd907ef1010c11df2218c1ed0ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8e0cbbd907ef1010c11df2218c1ed0ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>ce0cbbd907ef1010c11df2218c1ed0f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8e0cbbd907ef1010c11df2218c1ed0ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>460cbbd907ef1010c11df2218c1ed0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>assign the new request to assigment group.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>c1d413d107af1010c11df2218c1ed073</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>e4904daa-e26c-4f26-8959-ede9ace908b1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c1d413d107af1010c11df2218c1ed073"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c1d413d107af1010c11df2218c1ed073</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>09d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <value>assignment_group={"display":"Snow Dev","value":"3355217507d65450c11df2218c1ed068"}</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c1d413d107af1010c11df2218c1ed073</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>c9d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <value>x_513186_domino_ap_firewall</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c1d413d107af1010c11df2218c1ed073"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c1d413d107af1010c11df2218c1ed073</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>c1d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c1d413d107af1010c11df2218c1ed073</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>0dd413d107af1010c11df2218c1ed074</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c1d413d107af1010c11df2218c1ed073</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:31:38</sys_created_on>
+        <sys_id>85d413d107af1010c11df2218c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:31:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=cd92535107af1010c11df2218c1ed096^sys_idNOT INcfa87b5907ef1010c11df2218c1ed09d"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.1</order>
+        <parent_ui_id>80379e59-fc8c-4031-92a0-43075e6ac7da</parent_ui_id>
+        <subflow display_value="CS approval">aa273b1907ef1010c11df2218c1ed016</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:14</sys_created_on>
+        <sys_id>cfa87b5907ef1010c11df2218c1ed09d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>cc9754c6-ce92-4ef3-a2b1-c2471bb972d1</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cfa87b5907ef1010c11df2218c1ed09d"/>
+    <sys_element_mapping action="delete_multiple" query="id=cfa87b5907ef1010c11df2218c1ed09d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fw_request_in</field>
+        <id>cfa87b5907ef1010c11df2218c1ed09d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:08:14</sys_created_on>
+        <sys_id>cfa87b5907ef1010c11df2218c1ed09f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:08:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_aa273b1907ef1010c11df2218c1ed016</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=cd92535107af1010c11df2218c1ed096^sys_idNOT IN160cbbd907ef1010c11df2218c1ed0f2,460cbbd907ef1010c11df2218c1ed0dc,48d75f1507af1010c11df2218c1ed0f9,8a0cbbd907ef1010c11df2218c1ed0de"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8e0cbbd907ef1010c11df2218c1ed0f1</block>
+        <comment/>
+        <connected_to>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>160cbbd907ef1010c11df2218c1ed0f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:56</sys_updated_on>
+        <ui_id>eba1a750-9ece-49f6-9156-f51584534dc6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=160cbbd907ef1010c11df2218c1ed0f2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ca0cbbd907ef1010c11df2218c1ed0db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>460cbbd907ef1010c11df2218c1ed0dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>a081f563-46fa-40b1-9a69-a18e4f533ff8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=460cbbd907ef1010c11df2218c1ed0dc"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ccd75f1507af1010c11df2218c1ed0f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>48d75f1507af1010c11df2218c1ed0f9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>80379e59-fc8c-4031-92a0-43075e6ac7da</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=48d75f1507af1010c11df2218c1ed0f9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>48d75f1507af1010c11df2218c1ed0f9</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>c4d75f1507af1010c11df2218c1ed0fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:44:40</sys_updated_on>
+        <value>CS Approval needed</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=48d75f1507af1010c11df2218c1ed0f9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>48d75f1507af1010c11df2218c1ed0f9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>44d75f1507af1010c11df2218c1ed0fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:44:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.cs_approval_needed}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>48d75f1507af1010c11df2218c1ed0f9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:44:40</sys_created_on>
+        <sys_id>80d75f1507af1010c11df2218c1ed0fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:44:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">060cbbd907ef1010c11df2218c1ed0de</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="FW Request">cd92535107af1010c11df2218c1ed096</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>8a0cbbd907ef1010c11df2218c1ed0de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <ui_id>ce8a9ed0-33ef-4ebe-90c9-7871db5122f0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8a0cbbd907ef1010c11df2218c1ed0de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8a0cbbd907ef1010c11df2218c1ed0de</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>060cbbd907ef1010c11df2218c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <value>SO approval rejected</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8a0cbbd907ef1010c11df2218c1ed0de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8a0cbbd907ef1010c11df2218c1ed0de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>820cbbd907ef1010c11df2218c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.approval}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8a0cbbd907ef1010c11df2218c1ed0de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 22:22:55</sys_created_on>
+        <sys_id>ce0cbbd907ef1010c11df2218c1ed0e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 22:22:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=cd92535107af1010c11df2218c1ed096^sys_idNOT INa35a5b9507af1010c11df2218c1ed08c"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>cd92535107af1010c11df2218c1ed096</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e4904daa-e26c-4f26-8959-ede9ace908b1.record.u_requested_for.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:55:50</sys_created_on>
+        <sys_id>a35a5b9507af1010c11df2218c1ed08c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:55:50</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>146c2196-f367-4eda-8144-11e73aea02ea</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_cd92535107af1010c11df2218c1ed096^sys_idNOT INb8b3179107af1010c11df2218c1ed027,bcb3179107af1010c11df2218c1ed032,f4b3179107af1010c11df2218c1ed02d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cd92535107af1010c11df2218c1ed096</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>b8b3179107af1010c11df2218c1ed027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:26:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cd92535107af1010c11df2218c1ed096</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>bcb3179107af1010c11df2218c1ed032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:26:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cd92535107af1010c11df2218c1ed096</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 19:26:42</sys_created_on>
+        <sys_id>f4b3179107af1010c11df2218c1ed02d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 19:26:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

@@ -4,13 +4,13 @@
             <element>server_network_group_name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 21:08:52</sys_created_on>
-            <sys_id>266e241d0753d410c11df2218c1ed0f1</sys_id>
+            <sys_created_on>2020-09-22 19:45:04</sys_created_on>
+            <sys_id>4b5e582f071f5010c11df2218c1ed038</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">1b55a7fc07179410c11df2218c1ed0c0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 21:08:52</sys_updated_on>
+            <sys_updated_on>2020-09-22 19:45:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>server_network_group_owner</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 21:08:52</sys_created_on>
-            <sys_id>aa6e241d0753d410c11df2218c1ed0f1</sys_id>
+            <sys_created_on>2020-09-22 19:45:04</sys_created_on>
+            <sys_id>cf5e582f071f5010c11df2218c1ed038</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">1b55a7fc07179410c11df2218c1ed0c0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 21:08:52</sys_updated_on>
+            <sys_updated_on>2020-09-22 19:45:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

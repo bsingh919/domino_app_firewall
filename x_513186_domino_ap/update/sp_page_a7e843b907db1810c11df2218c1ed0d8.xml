@@ -8,6 +8,7 @@
         <internal>false</internal>
         <public>false</public>
         <roles/>
+        <seo_script/>
         <short_description/>
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -22,6 +23,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-09-17 21:40:54</sys_updated_on>
         <title>Domino-Bal3</title>
+        <use_seo_script>false</use_seo_script>
     </sp_page>
     <sys_translated_text action="delete_multiple" query="documentkey=a7e843b907db1810c11df2218c1ed0d8"/>
 </record_update>

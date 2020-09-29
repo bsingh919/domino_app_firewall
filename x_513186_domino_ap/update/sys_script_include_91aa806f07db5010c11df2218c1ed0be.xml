@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_513186_domino_ap.DominoFilterUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DominoFilterUtils</name>
+        <script><![CDATA[var DominoFilterUtils = Class.create();
+DominoFilterUtils.prototype = {
+	initialize: function() {
+	},
+	getSvrGroupForSimpleList: function() {
+		var list = [];
+		var gr = new GlideRecord("x_513186_domino_ap_fw_server_network_groups");
+		gr.query();
+		while(gr.next()) {
+			var is_active = this.checkActive(gr.sys_id);
+			if(is_active == 0) {
+				continue;
+			}
+			list.push(gr.sys_id.toString());
+		}
+		return list;		
+	},
+	getSvrGroup: function() {
+		var list = '';
+		var gr = new GlideRecord("x_513186_domino_ap_fw_server_network_groups");
+		gr.query();
+		while(gr.next()) {
+			var is_active = this.checkActive(gr.sys_id);
+			if(is_active == 0) {
+				continue;
+			}
+			if (list.length > 0) {
+				//build a comma separated string of groups if there is more than one
+				list += (',' + gr.sys_id);
+			}
+			else {
+				
+				list = String(gr.sys_id);
+			}
+		}
+		return 'sys_idIN' + list;		
+	},
+	checkActive: function(sys_id){
+		var rule = new GlideRecord('x_513186_domino_ap_firewall_rules');
+		//rule.addQuery('source_server_network_group', sys_id);
+		var query = 'source_server_network_group=' + sys_id + '^ORdest_server_network_group=' + sys_id;
+		rule.addEncodedQuery(query);
+		rule.query();
+		// active if no rule uses this group yet
+		if(rule.getRowCount() == 0)
+			return 1;
+		while(rule.next()) {
+			var fw = new GlideRecord('x_513186_domino_ap_firewall');
+			fw.get(rule.firewall_req_id);
+			if(fw) {
+				if(fw.state != 3)
+					return 0;
+			}
+		}
+		return 1;
+	},	
+	type: 'DominoFilterUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-22 18:20:25</sys_created_on>
+        <sys_id>91aa806f07db5010c11df2218c1ed0be</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>DominoFilterUtils</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_script_include_91aa806f07db5010c11df2218c1ed0be</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-23 12:02:05</sys_updated_on>
+    </sys_script_include>
+</record_update>

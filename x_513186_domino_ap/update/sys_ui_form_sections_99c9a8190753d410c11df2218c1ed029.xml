@@ -14,62 +14,6 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2020-09-15 21:04:54</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 21:01:24</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>99bce8990753d410c11df2218c1ed042</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_513186_domino_ap_fw_server_network_groups" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">99c9a8190753d410c11df2218c1ed029</sys_ui_form>
-            <sys_ui_section caption="Group used in Source" display_value="Group used in Source" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">91bce8990753d410c11df2218c1ed040</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 21:04:54</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 21:02:17</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>82ece0d90753d410c11df2218c1ed0c1</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_513186_domino_ap_fw_server_network_groups" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">99c9a8190753d410c11df2218c1ed029</sys_ui_form>
-            <sys_ui_section caption="Group used in Dest" display_value="Group used in Dest" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">0aece0d90753d410c11df2218c1ed0be</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 21:04:54</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 20:48:34</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>1dc9a8190753d410c11df2218c1ed02d</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_513186_domino_ap_fw_server_network_groups" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">99c9a8190753d410c11df2218c1ed029</sys_ui_form>
-            <sys_ui_section caption="All related FW Rules" display_value="All related FW Rules" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">99c9a8190753d410c11df2218c1ed02b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 21:04:54</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 20:59:54</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>2b5ce4990753d410c11df2218c1ed06d</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_513186_domino_ap_fw_server_network_groups" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">99c9a8190753d410c11df2218c1ed029</sys_ui_form>
-            <sys_ui_section caption="All related FW Ports List" display_value="All related FW Ports List" name="x_513186_domino_ap_fw_server_network_groups" sys_domain="global" view="Default view">935ce4990753d410c11df2218c1ed06b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 21:04:54</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_513186_domino_ap_fw_server_network_groups</name>
             <roles/>

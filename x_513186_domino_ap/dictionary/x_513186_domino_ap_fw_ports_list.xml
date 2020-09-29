@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="FW Ports List" max_length="40" name="x_513186_domino_ap_fw_ports_list" sizeclass="14" type="collection">
+    <element label="FW Ports List" max_length="40" name="x_513186_domino_ap_fw_ports_list" sizeclass="19" type="collection">
         <element label="Port" max_length="32" name="port" type="string"/>
         <element display="true" label="Ports Group Ref" max_length="32" name="ports_group_ref" reference="x_513186_domino_ap_fw_ports_group" type="reference"/>
         <element label="Port Protocol" max_length="32" name="port_protocol" type="string"/>
+        <element label="Port Request Ref" max_length="32" name="port_request_ref" reference="x_513186_domino_ap_firewall_port_group_request" type="reference"/>
+        <element label="State" max_length="40" name="state" type="integer"/>
         <index name="index">
+            <element name="port_request_ref"/>
+        </index>
+        <index name="index2">
             <element name="ports_group_ref"/>
         </index>
     </element>

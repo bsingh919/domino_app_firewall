@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="FW Server Network Lists" max_length="40" name="x_513186_domino_ap_fw_server_network_lists" sizeclass="28" type="collection">
+    <element label="FW Server Network Lists" max_length="40" name="x_513186_domino_ap_fw_server_network_lists" sizeclass="32" type="collection">
         <element label="IP Address" max_length="80" name="ip_address" type="ip_addr"/>
+        <element label="Ip Group Request Ref" max_length="32" name="ip_group_request_ref" reference="x_513186_domino_ap_firewall_ip_group_request" type="reference"/>
         <element label="Mask" max_length="80" name="mask" type="string"/>
         <element label="Server Name" max_length="80" name="server_name" type="string"/>
         <element display="true" label="Server Network Group Ref" max_length="32" name="server_network_group_ref" reference="x_513186_domino_ap_fw_server_network_groups" type="reference"/>
+        <element label="Status" max_length="40" name="status" type="integer"/>
         <index name="index">
+            <element name="ip_group_request_ref"/>
+        </index>
+        <index name="index2">
             <element name="server_network_group_ref"/>
         </index>
     </element>

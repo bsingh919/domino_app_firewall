@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_513186_domino_ap.DominoUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>DominoUtils</name>
+        <script><![CDATA[var DominoUtils = Class.create();
+DominoUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	retrieveFwRequest: function() {
+		var results = [];
+		var rules = {};
+		var srcReq = new GlideRecord('x_513186_domino_ap_firewall');
+		srcReq.get(this.getParameter('sys_id'));
+		if(!srcReq) {
+			gs.error("Could not locate application with ID " + this.getParameter('sys_id') + " in " + this.getParameter('table'));
+			return;
+		}
+		
+		rules = new DominoUtils().copyRules(srcReq.sys_id);
+		results = [{
+			"u_service_wbc_code": srcReq.u_service_wbc_code + "",
+			"u_service_name": srcReq.u_service_name + "",
+			"u_service_manager": srcReq.u_service_manager + "",
+			"u_requested_for": srcReq.u_requested_for + "",
+			"u_project_name": srcReq.u_project_name + "",
+			"u_options": srcReq.u_options + "",
+			"u_deputies": srcReq.u_deputies + "",
+			"u_comment": srcReq.u_comment + "",
+			"server_groups": srcReq.server_groups + "",
+			"requested_expiration_date": srcReq.requested_expiration_date + "",
+			"network_groups": srcReq.network_groups + "",
+			"estimated_start_date": srcReq.estimated_start_date + "",
+			"description": srcReq.description + "",
+			"rules": JSON.stringify(rules)
+		}];
+		return JSON.stringify(results[0]);
+		
+	},
+	
+	copyRules: function(srcSysId) {
+		var ruleDetails = {};
+		var rules = [];
+		var src = new GlideRecord('x_513186_domino_ap_firewall_rules');
+		src.addQuery("firewall_req_id", srcSysId);
+		src.addQuery("domino_status", "!=", "deleted");
+		src.query();
+		while(src.next()) {
+			gs.info("inside the while loop");
+			ruleDetails = {"dest_ip_address": src.dest_ip_address+ "",
+							"dest_ip_mask": src.dest_mask+ "",
+							"dest_server_name": src.dest_server_name+ "",
+							"nese_service_name": src.nese_service_name+ "",
+							"port_number": src.port_number+ "",
+							"protocol": src.protocol+ "",
+							"source_ip_address": src.source_ip_address+ "",
+							"source_ip_mask": src.source_mask+ "",
+							"source_server_name": src.source_server_name+ "",
+							"source_server_network_group": src.source_server_network_group + "",
+							"dest_server_network_group": src.dest_server_network_group + "",
+							"dest_ports_group": src.dest_ports_group + "",
+							"sys_id": src.sys_id + ""
+						};
+			rules.push(ruleDetails);
+		}
+		return rules;
+	},
+	
+    type: 'DominoUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-18 20:13:58</sys_created_on>
+        <sys_id>927eff0a07d75810c11df2218c1ed06f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DominoUtils</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_script_include_927eff0a07d75810c11df2218c1ed06f</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-21 10:27:39</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sys_script_include_927eff0a07d75810c11df2218c1ed06f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_513186_domino_ap.DominoUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;DominoUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var DominoUtils = Class.create();
+DominoUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	retrieveFwRequest: function() {
+		var results = [];
+		var rules = {};
+		var srcReq = new GlideRecord('x_513186_domino_ap_firewall');
+		srcReq.get(this.getParameter('sys_id'));
+		if(!srcReq) {
+			gs.error("Could not locate application with ID " + this.getParameter('sys_id') + " in " + this.getParameter('table'));
+			return;
+		}
+		
+		rules = new DominoUtils().copyRules(srcReq.sys_id);
+		results = [{
+			"u_service_wbc_code": srcReq.u_service_wbc_code + "",
+			"u_service_name": srcReq.u_service_name + "",
+			"u_service_manager": srcReq.u_service_manager + "",
+			"u_requested_for": srcReq.u_requested_for + "",
+			"u_project_name": srcReq.u_project_name + "",
+			"u_options": srcReq.u_options + "",
+			"u_deputies": srcReq.u_deputies + "",
+			"u_comment": srcReq.u_comment + "",
+			"server_groups": srcReq.server_groups + "",
+			"requested_expiration_date": srcReq.requested_expiration_date + "",
+			"network_groups": srcReq.network_groups + "",
+			"estimated_start_date": srcReq.estimated_start_date + "",
+			"description": srcReq.description + "",
+			"rules": JSON.stringify(rules)
+		}];
+		return JSON.stringify(results[0]);
+		
+	},
+	
+	copyRules: function(srcSysId) {
+		var ruleDetails = {};
+		var rules = [];
+		var src = new GlideRecord('x_513186_domino_ap_firewall_rules');
+		src.addQuery("firewall_req_id", srcSysId);
+		src.addQuery("domino_status", "!=", "deleted");
+		src.query();
+		while(src.next()) {
+			gs.info("inside the while loop");
+			ruleDetails = {"dest_ip_address": src.dest_ip_address+ "",
+							"dest_ip_mask": src.dest_mask+ "",
+							"dest_server_name": src.dest_server_name+ "",
+							"nese_service_name": src.nese_service_name+ "",
+							"port_number": src.port_number+ "",
+							"protocol": src.protocol+ "",
+							"source_ip_address": src.source_ip_address+ "",
+							"source_ip_mask": src.source_mask+ "",
+							"source_server_name": src.source_server_name+ "",
+							"source_server_network_group": src.source_server_network_group + "",
+							"dest_server_network_group": src.dest_server_network_group + "",
+							"dest_ports_group": src.dest_ports_group + "",
+							"sys_id": src.sys_id + ""
+						};
+			rules.push(ruleDetails);
+		}
+		return rules;
+	},
+	
+    type: 'DominoUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cuong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-18 20:13:58&lt;/sys_created_on&gt;&lt;sys_id&gt;927eff0a07d75810c11df2218c1ed06f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;DominoUtils&lt;/sys_name&gt;&lt;sys_package display_value="Domino App" source="x_513186_domino_ap"&gt;21e2d540070b5010c11df2218c1ed04b&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Domino App"&gt;21e2d540070b5010c11df2218c1ed04b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_927eff0a07d75810c11df2218c1ed06f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;cuong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-21 10:27:39&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1019422555</payload_hash>
+        <record_name>DominoUtils</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-21 10:27:39</sys_created_on>
+        <sys_id>c835990f079b1010c11df2218c1ed010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174b0346a900000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-21 10:27:39</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>4035990f939b10109e0deebf6d6fa310</update_guid>
+        <update_guid_history>4035990f939b10109e0deebf6d6fa310:1019422555,779eff0a7cd758102489d9a479b83d8d:-131762290</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-21 10:27:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>3562f25151e74dc59557ac7fd4639089</sys_id>
+        <sys_metadata>927eff0a07d75810c11df2218c1ed06f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DominoUtils</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sys_script_include_927eff0a07d75810c11df2218c1ed06f</sys_update_name>
+        <sys_update_version display_value="sys_script_include_927eff0a07d75810c11df2218c1ed06f">c835990f079b1010c11df2218c1ed010</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-21 10:27:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

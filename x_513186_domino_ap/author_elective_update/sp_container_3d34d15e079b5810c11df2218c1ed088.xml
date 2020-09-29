@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Domino-Bal - Container 3</name>
+        <order>3</order>
+        <sp_page display_value="domino_bal">9d734bb507db1810c11df2218c1ed045</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-19 02:27:56</sys_created_on>
+        <sys_id>3d34d15e079b5810c11df2218c1ed088</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Domino-Bal - Container 3</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sp_container_3d34d15e079b5810c11df2218c1ed088</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-19 02:28:02</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sp_container_3d34d15e079b5810c11df2218c1ed088</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Domino-Bal - Container 3</name><order>3</order><sp_page display_value="domino_bal">9d734bb507db1810c11df2218c1ed045</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-19 02:27:56</sys_created_on><sys_id>3d34d15e079b5810c11df2218c1ed088</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Domino-Bal - Container 3</sys_name><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>sp_container_3d34d15e079b5810c11df2218c1ed088</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-19 02:28:02</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>532197230</payload_hash>
+        <record_name>Domino-Bal - Container 3</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-19 02:28:02</sys_created_on>
+        <sys_id>d7349d5e079b5810c11df2218c1ed018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174a4309af20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-19 02:28:02</sys_updated_on>
+        <type>Container</type>
+        <update_guid>9f349d5e179b5810c081d5a574479317</update_guid>
+        <update_guid_history>9f349d5e179b5810c081d5a574479317:532197230,b934d15ec29b581046939afec1261f8a:-705633169</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Domino-Bal - Container 3">7d449d5e079b5810c11df2218c1ed088</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-19 02:28:13</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>101bfd241c714aaa85a09aa9374d5824</sys_id>
+        <sys_metadata>3d34d15e079b5810c11df2218c1ed088</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Domino-Bal - Container 3</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sp_container_3d34d15e079b5810c11df2218c1ed088</sys_update_name>
+        <sys_update_version display_value="sp_container_3d34d15e079b5810c11df2218c1ed088">d7349d5e079b5810c11df2218c1ed018</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-19 02:28:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

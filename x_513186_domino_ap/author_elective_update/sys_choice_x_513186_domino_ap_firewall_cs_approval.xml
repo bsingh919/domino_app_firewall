@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cs_approval" table="x_513186_domino_ap_firewall" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cs_approval</element>
+            <name>x_513186_domino_ap_firewall</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-28 16:54:07</sys_created_on>
+            <sys_id>6dc072d9072f1010c11df2218c1ed079</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cs_approval</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_choice_x_513186_domino_ap_firewall_cs_approval</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-28 16:54:07</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cs_approval</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Choice 3</label>
+            <language>en</language>
+            <name>x_513186_domino_ap_firewall</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-28 16:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e5c072d9072f1010c11df2218c1ed07e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-28 16:54:51</sys_updated_on>
+            <value>Choice 3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cs_approval</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Not Required</label>
+            <language>en</language>
+            <name>x_513186_domino_ap_firewall</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-28 16:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1c072d9072f1010c11df2218c1ed079</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-28 17:21:45</sys_updated_on>
+            <value>not_required</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cs_approval</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Required</label>
+            <language>en</language>
+            <name>x_513186_domino_ap_firewall</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-28 16:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>29c072d9072f1010c11df2218c1ed07c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-28 17:21:45</sys_updated_on>
+            <value>required</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

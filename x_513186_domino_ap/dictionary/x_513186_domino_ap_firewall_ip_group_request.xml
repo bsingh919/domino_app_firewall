@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Firewall Ip Group Request" max_length="40" name="x_513186_domino_ap_firewall_ip_group_request" sizeclass="1" type="collection">
+        <element label="Fw Ip Group" max_length="32" name="fw_ip_group" read_only="true" reference="x_513186_domino_ap_fw_server_network_groups" type="reference"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+    </element>
+</database>

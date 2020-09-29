@@ -2,6 +2,7 @@
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables/>
         <default>false</default>
+        <hide_portal_name>false</hide_portal_name>
         <homepage display_value="domino_landing">799e9d5307479010c11df2218c1ed0ce</homepage>
         <icon/>
         <kb_knowledge_base/>

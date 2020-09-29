@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="user_submision_state" table="x_513186_domino_ap_firewall" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>user_submision_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_513186_domino_ap_firewall</name>
+            <sequence/>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-22 12:03:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d8b4ba97071b5010c11df2218c1ed097</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-22 12:03:39</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+        <sys_choice_set action="DELETE">
+            <element>user_submision_state</element>
+            <name>x_513186_domino_ap_firewall</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-22 12:03:39</sys_created_on>
+            <sys_id>ccc4f657071b5010c11df2218c1ed09a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>user_submision_state</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_choice_x_513186_domino_ap_firewall_user_submision_state</sys_update_name>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-22 12:03:39</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sys_choice_x_513186_domino_ap_firewall_user_submision_state</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="user_submision_state" table="x_513186_domino_ap_firewall" version="3"><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>user_submision_state</element><hint/><inactive>false</inactive><label>Draft</label><language>en</language><name>x_513186_domino_ap_firewall</name><sequence/><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-22 12:03:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d8b4ba97071b5010c11df2218c1ed097</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-22 12:03:39</sys_updated_on><value>0</value></sys_choice><sys_choice_set action="INSERT_OR_UPDATE"><element>user_submision_state</element><name>x_513186_domino_ap_firewall</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>cuong</sys_created_by><sys_created_on>2020-09-22 12:03:39</sys_created_on><sys_id>ccc4f657071b5010c11df2218c1ed09a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>user_submision_state</sys_name><sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package><sys_policy/><sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope><sys_update_name>sys_choice_x_513186_domino_ap_firewall_user_submision_state</sys_update_name><sys_updated_by>cuong</sys_updated_by><sys_updated_on>2020-09-22 12:03:39</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>-1831797628</payload_hash>
+        <record_name>Firewall Requests.User Submision State</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-22 12:33:10</sys_created_on>
+        <sys_id>a88b76db071b5010c11df2218c1ed0a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174b5cdb0f90000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-22 12:33:10</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>608b76dbbb1b501058fbde010cbdb8a7</update_guid>
+        <update_guid_history>608b76dbbb1b501058fbde010cbdb8a7:-1831797628,f5d4b697361b50108cbe269ed119b5f5:169884665,b0d4fa977f1b50109fd9b674f1d4add7:-930818543,84c4f657141b5010df52bf044836df9d:-1831797628</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-22 12:33:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>ccc4f657071b5010c11df2218c1ed09a</sys_id>
+        <sys_metadata>ccc4f657071b5010c11df2218c1ed09a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>user_submision_state</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sys_choice_x_513186_domino_ap_firewall_user_submision_state</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_513186_domino_ap_firewall_user_submision_state">a88b76db071b5010c11df2218c1ed0a7</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-22 12:33:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

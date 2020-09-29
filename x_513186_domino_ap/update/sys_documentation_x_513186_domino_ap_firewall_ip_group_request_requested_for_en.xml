@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="requested_for" label="Requested For" language="en" table="x_513186_domino_ap_firewall_ip_group_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>requested_for</element>
+            <help/>
+            <hint/>
+            <label>Requested For</label>
+            <language>en</language>
+            <name>x_513186_domino_ap_firewall_ip_group_request</name>
+            <plural>Requested Fors</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>cuong</sys_created_by>
+            <sys_created_on>2020-09-25 18:29:31</sys_created_on>
+            <sys_id>f1d92b1407631410c11df2218c1ed078</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Requested For</sys_name>
+            <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+            <sys_update_name>sys_documentation_x_513186_domino_ap_firewall_ip_group_request_requested_for_en</sys_update_name>
+            <sys_updated_by>cuong</sys_updated_by>
+            <sys_updated_on>2020-09-25 18:29:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

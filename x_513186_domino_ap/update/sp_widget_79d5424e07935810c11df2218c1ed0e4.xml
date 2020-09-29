@@ -62,11 +62,11 @@
 	
 	
  t.breadcrumbs = [{label: "My Firewall Requests", url: 'domino?id=' + t.page_id}]; 
-t.breadcrumbs.unshift({label: "Firewall Request", url: 'domino?id=domino_landing'});
+t.breadcrumbs.unshift({label: "Domino Landing", url: 'domino?id=domino_landing'});
 	
-gs.info('--->breadcrumbs object =' + t.breadcrumbs[0].label + " " + t.breadcrumbs[1].label );
+// gs.info('--->breadcrumbs object =' + t.breadcrumbs[0].label + " " + t.breadcrumbs[1].label );
 	
-gs.info('--->breadcrumbs URL =' + t.breadcrumbs[0].url + " " + t.breadcrumbs[1].url );
+// gs.info('--->breadcrumbs URL =' + t.breadcrumbs[0].url + " " + t.breadcrumbs[1].url );
 	
 })();]]></script>
         <servicenow>false</servicenow>
@@ -74,14 +74,14 @@ gs.info('--->breadcrumbs URL =' + t.breadcrumbs[0].url + " " + t.breadcrumbs[1].
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-18 11:26:16</sys_created_on>
         <sys_id>79d5424e07935810c11df2218c1ed0e4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>breadcrumbs_fwreq</sys_name>
         <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
         <sys_update_name>sp_widget_79d5424e07935810c11df2218c1ed0e4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-09-18 11:40:01</sys_updated_on>
+        <sys_updated_on>2020-09-21 20:34:56</sys_updated_on>
         <template><![CDATA[<!--
 <div> Baljinder </div>
 <div><h1  ng-repeat="item in c.data.breadcrumbs">

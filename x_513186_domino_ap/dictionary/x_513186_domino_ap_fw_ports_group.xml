@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="FW Ports Group" max_length="40" name="x_513186_domino_ap_fw_ports_group" sizeclass="6" type="collection">
+    <element label="FW Ports Group" max_length="40" name="x_513186_domino_ap_fw_ports_group" sizeclass="7" type="collection">
         <element display="true" label="Port Group Name" max_length="80" name="port_group_name" type="string"/>
         <element label="Port Group Owner" max_length="80" name="port_group_owner" type="string"/>
     </element>

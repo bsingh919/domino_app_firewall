@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_513186_domino_ap.getActiveServerNetworkGroup</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>getActiveServerNetworkGroup</name>
+        <script><![CDATA[var getActiveServerNetworkGroup = Class.create();
+getActiveServerNetworkGroup.prototype = {
+
+	initialize: function() {
+	},
+
+	getActiveSrcServerNetworkGroup: function(){
+		var list = '';
+		var gr = new GlideRecord("x_513186_domino_ap_fw_server_network_groups");
+		gr.query();
+		gs.warn("The function is called here");
+		while(gr.next()) {
+			var is_active = checkActive(gr.sys_id);
+			if(is_active == 0) {
+				continue;
+			}
+			if (list.length > 0) {
+				//build a comma separated string of groups if there is more than one
+				list += (',' + usr.sys_id);
+			}
+			else {
+				list = usr.sys_id;
+			}
+		}
+		return 'sys_idIN' + list;
+	},
+	is_active: function(sys_id){
+		gs.warn("isActive is called here");
+		var rule = new GlideRecord('x_513186_domino_ap_firewall_rules');
+		rule.addQuery('source_server_network_group', sys_id);
+		rule.query();
+		// active if no rule uses this group yet
+		if(rule.getRowCount() == 0)
+			return 1;
+		while(rule.next()) {
+			var fw = new GlideRecord('x_513186_domino_ap_firewall');
+			fw.get(rule.firewall_req_id);
+			if(fw) {
+				if(fw.state != 3)
+					return 0;
+			}
+		}
+		return 1;
+	},
+	type: 'getActiveServerNetworkGroup'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-22 17:37:49</sys_created_on>
+        <sys_id>9ebf379707db5010c11df2218c1ed0c2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>getActiveServerNetworkGroup</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_script_include_9ebf379707db5010c11df2218c1ed0c2</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-22 18:17:58</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</application>
+        <file_path/>
+        <instance_id>b4a6de96db7054904b5c50b6f496193e</instance_id>
+        <instance_name>dev104053</instance_name>
+        <name>sys_script_include_9ebf379707db5010c11df2218c1ed0c2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_513186_domino_ap.getActiveServerNetworkGroup&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;getActiveServerNetworkGroup&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var getActiveServerNetworkGroup = Class.create();
+getActiveServerNetworkGroup.prototype = {
+
+	initialize: function() {
+	},
+
+	getActiveSrcServerNetworkGroup: function(){
+		var list = '';
+		var gr = new GlideRecord("x_513186_domino_ap_fw_server_network_groups");
+		gr.query();
+		gs.warn("The function is called here");
+		while(gr.next()) {
+			var is_active = checkActive(gr.sys_id);
+			if(is_active == 0) {
+				continue;
+			}
+			if (list.length &gt; 0) {
+				//build a comma separated string of groups if there is more than one
+				list += (',' + usr.sys_id);
+			}
+			else {
+				list = usr.sys_id;
+			}
+		}
+		return 'sys_idIN' + list;
+	},
+	is_active: function(sys_id){
+		gs.warn("isActive is called here");
+		var rule = new GlideRecord('x_513186_domino_ap_firewall_rules');
+		rule.addQuery('source_server_network_group', sys_id);
+		rule.query();
+		// active if no rule uses this group yet
+		if(rule.getRowCount() == 0)
+			return 1;
+		while(rule.next()) {
+			var fw = new GlideRecord('x_513186_domino_ap_firewall');
+			fw.get(rule.firewall_req_id);
+			if(fw) {
+				if(fw.state != 3)
+					return 0;
+			}
+		}
+		return 1;
+	},
+	type: 'getActiveServerNetworkGroup'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cuong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-22 17:37:49&lt;/sys_created_on&gt;&lt;sys_id&gt;9ebf379707db5010c11df2218c1ed0c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;getActiveServerNetworkGroup&lt;/sys_name&gt;&lt;sys_package display_value="Domino App" source="x_513186_domino_ap"&gt;21e2d540070b5010c11df2218c1ed04b&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Domino App"&gt;21e2d540070b5010c11df2218c1ed04b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9ebf379707db5010c11df2218c1ed0c2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;cuong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-22 18:17:58&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>513078644</payload_hash>
+        <record_name>getActiveServerNetworkGroup</record_name>
+        <reverted_from/>
+        <source>3712dc8a07439410c11df2218c1ed02c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-22 18:17:58</sys_created_on>
+        <sys_id>9f6a086f07db5010c11df2218c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174b7095ec60000001</sys_recorded_at>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-22 18:17:58</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>d76a482ff6db50108e669acbf97498dc</update_guid>
+        <update_guid_history>d76a482ff6db50108e669acbf97498dc:513078644,ff2a446f1ddb5010c1ca1df16794fd6d:-1830292763,d2c9042fffdb50105162de817bbefdf0:128993660,ce6540ab25db50109d67797471b397f9:-1199963993,a1e44c2b7adb5010e72abc1ba4c33f64:-1923612816,8ca38ce764db5010b4747f81bfa41793:1642044990,db3104e742db5010311cfb831a873eb2:1930721794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-23 12:01:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0b2682ae69fc47f489fcfe628640bea4</sys_id>
+        <sys_metadata>9ebf379707db5010c11df2218c1ed0c2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getActiveServerNetworkGroup</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_scope_delete display_value="">534871dd57fc4727a77d1cc641633e59</sys_scope_delete>
+        <sys_update_name>sys_script_include_9ebf379707db5010c11df2218c1ed0c2</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9ebf379707db5010c11df2218c1ed0c2">9f6a086f07db5010c11df2218c1ed04a</sys_update_version>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-23 12:01:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

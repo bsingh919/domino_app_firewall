@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic">
+    <sys_filter_option_dynamic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_for_default>true</available_for_default>
+        <available_for_filter>true</available_for_filter>
+        <available_for_ref_qual>true</available_for_ref_qual>
+        <field_type display_value="Records">4cebed7367323200c4098c7942415a36</field_type>
+        <label>DominoTest</label>
+        <order/>
+        <roles/>
+        <script>new x_513186_domino_ap.DominoFilterUtils().getSvrGroupForSimpleList()</script>
+        <script_reference_id/>
+        <script_reference_table/>
+        <sys_class_name>sys_filter_option_dynamic</sys_class_name>
+        <sys_created_by>cuong</sys_created_by>
+        <sys_created_on>2020-09-23 12:35:29</sys_created_on>
+        <sys_id>8b75443b07579010c11df2218c1ed02c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>DominoTest</sys_name>
+        <sys_package display_value="Domino App" source="x_513186_domino_ap">21e2d540070b5010c11df2218c1ed04b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domino App">21e2d540070b5010c11df2218c1ed04b</sys_scope>
+        <sys_update_name>sys_filter_option_dynamic_8b75443b07579010c11df2218c1ed02c</sys_update_name>
+        <sys_updated_by>cuong</sys_updated_by>
+        <sys_updated_on>2020-09-23 12:41:47</sys_updated_on>
+        <table>x_513186_domino_ap_firewall</table>
+        <table_containing_filter/>
+    </sys_filter_option_dynamic>
+</record_update>
